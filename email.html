@@ -54,6 +54,9 @@ body.dark .btn-voltar,
 body.dark button{
     background:#7e1ac7;
 }
+body.dark .btn-cancelar{
+    background:#666 !important;
+}
 .area-final{
     display:flex;
     flex-direction:column;
@@ -317,7 +320,53 @@ button:hover{
 .btn-topo:hover{
     background:#7e1ac7;
 }
-    </style>
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+.modal-conteudo{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:400px;
+    max-width:90%;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+.modal-conteudo h3{
+    margin-top:0;
+    color:#660099;
+}
+.modal-conteudo button{
+    margin-top:15px;
+}
+body.dark .modal-conteudo{
+    background:#2b2b2b;
+    color:white;
+}
+.acoes-modal{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:20px;
+}
+.btn-confirmar{
+    background:#660099;
+    color:white;
+}
+.btn-cancelar{
+    background:#999;
+    color:white;
+}
+</style>
 
 </head>
 
@@ -497,11 +546,11 @@ async function buscarINEP(){
 
     if(!inep){
 
-        alert("Favor informar INEP.");
-
-        document.getElementById("inep")
-            .focus();
-
+    mostrarAviso(
+    "Favor informar o INEP."
+);
+        document.getElementById("inep").focus();
+        
         return;
     }
 
@@ -522,9 +571,11 @@ async function buscarINEP(){
 
         if(!registro){
 
-            alert("INEP não encontrado");
-
-            return;
+mostrarAviso(
+    "INEP não encontrado."
+);
+        return;
+            
         }
 
         document.getElementById("parceira").value =
@@ -561,7 +612,9 @@ if(
 
         console.error(erro);
 
-        alert("Erro ao ler o arquivo dados.json");
+        mostrarAviso(
+    "Erro ao ler o arquivo dados.json."
+);
 
     }
 
@@ -581,7 +634,9 @@ function validarChamado(){
 
     if(!chamado){
 
-        alert("Preencha o campo Chamado Vivo.");
+        mostrarAviso(
+    "Preencha o campo Chamado Vivo."
+);
 
         document.getElementById("chamado").focus();
 
@@ -612,9 +667,9 @@ function gerarEmail(){
         parceira.trim().toUpperCase() === "PENDENTE"
     ){
 
-        alert(
-            "INEP não localizado, confirmar implantação no Diário de Bordo."
-        );
+mostrarAviso(
+    "INEP não localizado. Confirmar implantação no Diário de Bordo."
+);
 
         return;
     }
@@ -704,9 +759,9 @@ if (
     parceira.toUpperCase() === "MAMINFO"
 ){
 
-    alert(
-        "Esta parceira utiliza Portal. Utilize o botão 🌐 Abrir Portal."
-    );
+mostrarAviso(
+    "Esta parceira utiliza Portal. Utilize o botão 🌐 Abrir Portal."
+);
 
     return;
 
@@ -718,13 +773,21 @@ const copia =
 const link =
 `mailto:${emailDestino}?cc=${encodeURIComponent(copia)}&subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
 
-if(
-    confirm(
-        "⚠️ Antes de enviar o e-mail, lembre-se de alterar para a caixa do NOC FUST e adicionar a sua assinatura no final do corpo do e-mail.\n\nClique em OK para continuar."
-    )
-){
-    window.location.href = link;
-}
+mostrarConfirmacao(
+
+    "⚠️ Antes de enviar o e-mail, lembre-se de alterar para a caixa do NOC FUST e adicionar a sua assinatura no final do corpo do e-mail.<br><br>Clique em Continuar para prosseguir.",
+
+    function(confirmado){
+
+        if(confirmado){
+
+            window.location.href = link;
+
+        }
+
+    }
+
+);
 
 }
 function abrirPortal(){
@@ -754,9 +817,9 @@ function abrirPortal(){
 
     }else{
 
-        alert(
-            "Esta parceira utiliza acionamento por e-mail."
-        );
+mostrarAviso(
+    "Esta parceira utiliza acionamento por e-mail."
+);
 
     }
 
@@ -825,12 +888,15 @@ assunto;
     document.getElementById("textoPortal").value =
 texto;
     
-    navigator.clipboard.writeText(texto);
+navigator.clipboard
+    .writeText(texto)
+    .then(() => {
 
-    alert(
-        "Texto copiado para a área de transferência."
-    );
+        mostrarAviso(
+            "Texto copiado para a área de transferência."
+        );
 
+    });
 }
  function alternarTema(){
 
@@ -903,6 +969,58 @@ window.addEventListener("scroll", () => {
     }
 
 });
+function mostrarAviso(texto){
+
+    document.getElementById(
+        "textoModal"
+    ).innerHTML = texto;
+
+    document.getElementById(
+        "modalAviso"
+    ).style.display = "flex";
+
+}
+
+function fecharModal(){
+
+    document.getElementById(
+        "modalAviso"
+    ).style.display = "none";
+
+}
+let callbackConfirmacao = null;
+
+function mostrarConfirmacao(texto, callback){
+
+    document.getElementById(
+        "textoConfirmacao"
+    ).innerHTML = texto;
+
+    callbackConfirmacao = callback;
+
+    document.getElementById(
+        "modalConfirmacao"
+    ).style.display = "flex";
+
+}
+
+function fecharConfirmacao(resultado){
+
+    document.getElementById(
+        "modalConfirmacao"
+    ).style.display = "none";
+
+    if(
+        callbackConfirmacao
+    ){
+
+        callbackConfirmacao(
+            resultado
+        );
+
+    }
+
+}
 </script>
 <button
     id="btnTopo"
@@ -912,6 +1030,52 @@ window.addEventListener("scroll", () => {
     ⬆ Topo
 
 </button>
+<div id="modalAviso" class="modal">
+
+    <div class="modal-conteudo">
+
+        <h3>Portal FUST</h3>
+
+        <p id="textoModal"></p>
+
+        <button onclick="fecharModal()">
+            OK
+        </button>
+
+    </div>
+
+</div>
+<div id="modalConfirmacao" class="modal">
+
+    <div class="modal-conteudo">
+
+        <h3>Portal FUST</h3>
+
+        <p id="textoConfirmacao"></p>
+
+        <div class="acoes-modal">
+
+            <button
+                class="btn-cancelar"
+                onclick="fecharConfirmacao(false)">
+
+                Cancelar
+
+            </button>
+
+            <button
+                class="btn-confirmar"
+                onclick="fecharConfirmacao(true)">
+
+                Continuar
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 </body>
 
 </html>
