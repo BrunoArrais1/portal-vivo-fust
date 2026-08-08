@@ -181,6 +181,35 @@ textarea { width:100%; height:240px; margin-top:15px; border-radius:5px; border:
 .btn-topo:hover{
     background:#7e1ac7;
 }
+.modal{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.5);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+.modal-conteudo{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:400px;
+    max-width:90%;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.3);
+}
+.modal-conteudo h3{
+    margin-top:0;
+    color:#660099;
+}
+body.dark .modal-conteudo{
+    background:#2b2b2b;
+    color:white;
+}
 </style>
 </head>
 
@@ -399,12 +428,23 @@ TÉCNICO: ${tecnico}`;
 }
 
 function copiar(){
-  const textarea = document.getElementById('resultado');
-  textarea.select();
-  document.execCommand('copy');
-  alert('Carimbo copiado com sucesso!');
-}
 
+    const texto =
+        document.getElementById(
+            "resultado"
+        ).value;
+
+    navigator.clipboard
+        .writeText(texto)
+        .then(() => {
+
+            mostrarAviso(
+                "Carimbo copiado com sucesso!"
+            );
+
+        });
+
+}
 /* CARIMBO 2 */
 function gerarCarimbo2(){
   const operadora = document.getElementById('operadora2').value;
@@ -423,10 +463,22 @@ PREVISÃO: ${data}`;
 }
 
 function copiarCarimbo2(){
-  const textarea = document.getElementById('resultado2');
-  textarea.select();
-  document.execCommand('copy');
-  alert('Carimbo copiado com sucesso!');
+
+    const texto =
+        document.getElementById(
+            "resultado2"
+        ).value;
+
+    navigator.clipboard
+        .writeText(texto)
+        .then(() => {
+
+            mostrarAviso(
+                "Carimbo copiado com sucesso!"
+            );
+
+        });
+
 }
 function voltarPortal(){
 
@@ -496,6 +548,25 @@ window.addEventListener("scroll", () => {
     }
 
 });
+function mostrarAviso(texto){
+
+    document.getElementById(
+        "textoModal"
+    ).innerHTML = texto;
+
+    document.getElementById(
+        "modalAviso"
+    ).style.display = "flex";
+
+}
+
+function fecharModal(){
+
+    document.getElementById(
+        "modalAviso"
+    ).style.display = "none";
+
+}
 </script>
 <button
     id="btnTopo"
@@ -505,5 +576,20 @@ window.addEventListener("scroll", () => {
     ⬆ Topo
 
 </button>
+<div id="modalAviso" class="modal">
+
+    <div class="modal-conteudo">
+
+        <h3>Portal FUST</h3>
+
+        <p id="textoModal"></p>
+
+        <button onclick="fecharModal()">
+            OK
+        </button>
+
+    </div>
+
+</div>
 </body>
 </html>
