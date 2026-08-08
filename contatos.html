@@ -242,7 +242,21 @@ input{
 
 #temaBtn:hover{
     background:#7e1ac7;
-}    
+}  
+.modal-ok{
+    background:#660099;
+    color:white;
+    border:none;
+    border-radius:8px;
+    padding:12px 25px;
+    font-weight:bold;
+    cursor:pointer;
+    width:auto;
+    min-width:120px;
+}
+.modal-ok:hover{
+    background:#7e1ac7;
+}
 .modal{
     display:none;
     position:fixed;
@@ -627,7 +641,9 @@ function fecharModal(){
 
         <p id="textoModal"></p>
 
-        <button onclick="fecharModal()">
+        <button 
+            class="modal-ok"
+            onclick="fecharModal()">
             OK
         </button>
 
