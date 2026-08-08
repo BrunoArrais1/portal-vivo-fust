@@ -272,18 +272,18 @@ input{
 
     <div class="tabs">
 
-        <button id="btnMun"
-                class="active"
-                onclick="mostrarAba('mun')">
-
-            Município
-
-        </button>
-
         <button id="btnInep"
+                class="active"
                 onclick="mostrarAba('inep')">
 
             INEP
+
+        </button>
+
+        <button id="btnMun"
+                onclick="mostrarAba('mun')">
+
+            Município
 
         </button>
 
@@ -291,8 +291,9 @@ input{
 
     <!-- MUNICÍPIO -->
 
-    <div id="abaMunicipio">
-
+    <div id="abaMunicipio"
+         style="display:none;">
+        
         <h3>Buscar por Município</h3>
 
         <select id="municipio" class="campo-municipio">
@@ -315,10 +316,9 @@ input{
 
     <!-- INEP -->
 
-    <div id="abaINEP"
-         style="display:none;">
+    <div id="abaINEP">
 
-        <h3>Buscar por INEP</h3>
+        <h3>Consulta por INEP</h3>
 
         <input
             id="inep"
@@ -565,6 +565,7 @@ window.addEventListener("load", () => {
         }
 
     });
+        document.getElementById("inep").focus();
 
 });
 
