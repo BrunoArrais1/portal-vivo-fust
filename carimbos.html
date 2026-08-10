@@ -244,14 +244,6 @@ body.dark .modal-conteudo{
 <!-- ABA 1 -->
 <div id="aba1" class="container aba ativa">
 
-<label>Tipo do Carimbo</label>
-<select id="tipo">
-<option>CONCLUIDO</option>
-<option>IMPRODUTIVA</option>
-<option>NÃO RESOLUTIVO</option>
-<option>DUPLICADO/INDEVIDO</option>
-</select>
-
 <label>Pendência</label>
 <select id="pendencia">
 <option>AP</option>
@@ -410,19 +402,11 @@ function trocarAba(id, el) {
 
 /* CARIMBO 1 */
 function gerarCarimbo(){
-  const tipo = document.getElementById('tipo').value;
   const pendencia = document.getElementById('pendencia').value;
   const status = document.getElementById('status').value;
   const parceira = document.getElementById('parceira').value;
   const motivo = document.getElementById('motivo').value;
   const tecnico = document.getElementById('tecnico').value;
-
-  const texto = `TIPO DO CARIMBO: ${tipo}
-PENDÊNCIA: ${pendencia}
-STATUS: ${status}
-PARCEIRA: ${parceira}
-MOTIVO: ${motivo}
-TÉCNICO: ${tecnico}`;
 
   document.getElementById('resultado').value = texto;
 }
