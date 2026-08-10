@@ -401,15 +401,32 @@ function trocarAba(id, el) {
 
 /* CARIMBO 1 */
 function gerarCarimbo(){
-  const pendencia = document.getElementById('pendencia').value;
-  const status = document.getElementById('status').value;
-  const parceira = document.getElementById('parceira').value;
-  const motivo = document.getElementById('motivo').value;
-  const tecnico = document.getElementById('tecnico').value;
 
-  document.getElementById('resultado').value = texto;
+  const pendencia =
+      document.getElementById('pendencia').value;
+
+  const status =
+      document.getElementById('status').value;
+
+  const parceira =
+      document.getElementById('parceira').value;
+
+  const motivo =
+      document.getElementById('motivo').value;
+
+  const tecnico =
+      document.getElementById('tecnico').value;
+
+  const texto = `PENDÊNCIA: ${pendencia}
+STATUS: ${status}
+PARCEIRA: ${parceira}
+MOTIVO: ${motivo}
+TÉCNICO: ${tecnico}`;
+
+  document.getElementById('resultado').value =
+      texto;
+
 }
-
 function copiar(){
 
     const texto =
