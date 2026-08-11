@@ -14691,19 +14691,11 @@
   },
   {
   "MUNICIPIO": "Bahia",
-  "CONTATOS": [
-    {
-      "NOME": "Rita Bastos - Secretária de Educação",
-      "TEL": "(75) 99968-7480"
-    },
-    {
-      "NOME": "Jorge - Setor de Tecnologia",
-      "TEL": "(75) 99126-9067"
-    },
-    {
-      "NOME": "Jamile - Responsável pela área tecnológica",
-      "TEL": "(75) 98192-3533"
-    }
-  ]
+    "CONTATO": "Rita Bastos - Secretária de Educação",
+    "TEL": "(75) 99968-7480",
+    "CONTATO": "Jorge - Setor de Tecnologia",
+    "TEL": "(75) 99126-9067",
+    "CONTATOS": "Jamile - Responsável pela área tecnológica",
+    "TEL": "(75) 98192-3533"
     }
   ]
