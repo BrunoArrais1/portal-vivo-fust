@@ -14691,7 +14691,7 @@
   },
   {
   "MUNICIPIO": "Bahia",
-  "CONTATOS": Seduc - Bahia
+  "CONTATOS": [
     {
       "NOME": "Rita Bastos - Secretária de Educação",
       "TEL": "(75) 99968-7480"
@@ -14703,5 +14703,7 @@
     {
       "NOME": "Jamile - Responsável pela área tecnológica",
       "TEL": "(75) 98192-3533"
+    }
+  ]
     }
   ]
