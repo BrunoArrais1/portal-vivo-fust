@@ -14690,12 +14690,18 @@
     "E-MAIL": "vinicius.bits1994@gmail.com"
   },
   {
-    "MUNICIPIO": "Bahia",
-    "SECRETARIO": "Rita Bastos - Secretária de Educação",
-    "TEL": "(75) 99968-7480"
-    "SECRETARIO": "Jorge - Setor de Tecnologia",
-    "TEL": "(75) 99126-9067"
-    "SECRETARIO": "Jamile - Responsável pela área tecnológica",
-    "TEL": "(75) 98192-3533"
-  }
-]
+  "MUNICIPIO": "Bahia",
+  "CONTATOS": [
+    {
+      "NOME": "Rita Bastos - Secretária de Educação",
+      "TEL": "(75) 99968-7480"
+    },
+    {
+      "NOME": "Jorge - Setor de Tecnologia",
+      "TEL": "(75) 99126-9067"
+    },
+    {
+      "NOME": "Jamile - Responsável pela área tecnológica",
+      "TEL": "(75) 98192-3533"
+    }
+  ]
