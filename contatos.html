@@ -525,7 +525,7 @@ function buscarMunicipio(){
     resultado.innerHTML = `
         <b>Secretário:</b> ${registro["SECRETARIO"]}<br>
         <b>Email:</b> ${registro["E-MAIL"]}
-        ${registro["OBS"] ? `<br><br><b>Observações:</b><br>${registro["OBS"]}` : ""}
+        ${registro["OBS"] ? `<br><b>Observações:</b><br>${registro["OBS"]}` : ""}
     `;
 
 }
