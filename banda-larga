@@ -1,0 +1,2266 @@
+[
+  {
+    "INEP": 26189518,
+    "ID": 2211797,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE ALBUINO BEZERRA SOARES",
+    "MUNICIPIO": "Dormentes",
+    "US": "ES"
+  },
+  {
+    "INEP": 27052540,
+    "ID": 2211681,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL TANIA MARIA VIEIRA",
+    "MUNICIPIO": "Santana do Ipanema",
+    "US": "SP"
+  },
+  {
+    "INEP": 41042492,
+    "ID": 2211998,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANJO DA GUARDA C M E I",
+    "MUNICIPIO": "Abatia",
+    "US": "PR"
+  },
+  {
+    "INEP": 41020502,
+    "ID": 2212119,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MENINO JESUS C M E I",
+    "MUNICIPIO": "Munhoz de Melo",
+    "US": "SP"
+  },
+  {
+    "INEP": 29273820,
+    "ID": 2212024,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL CASTRO ALVES",
+    "MUNICIPIO": "Manoel Vitorino",
+    "US": "SP"
+  },
+  {
+    "INEP": 29340420,
+    "ID": 2212376,
+    "OPERADORA": "ARION",
+    "ESCOLA": "SALA AVANCADA TERTULIANA BISPO RODRIGUES",
+    "MUNICIPIO": "Sento Se",
+    "US": "GO"
+  },
+  {
+    "INEP": 29426995,
+    "ID": 2211805,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE MUNICIPAL SONHO COLORIDO",
+    "MUNICIPIO": "Rio do Pires",
+    "US": "SP"
+  },
+  {
+    "INEP": 43057250,
+    "ID": 2212043,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI RAIO DE LUZ",
+    "MUNICIPIO": "Salvador das Missoes",
+    "US": "SP"
+  },
+  {
+    "INEP": 21151326,
+    "ID": 2212116,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEF MUNDOCA ALVIM",
+    "MUNICIPIO": "Timbiras",
+    "US": "GO"
+  },
+  {
+    "INEP": 21127786,
+    "ID": 2212433,
+    "OPERADORA": "ARION",
+    "ESCOLA": "UI MARIANO MARTINS",
+    "MUNICIPIO": "Fortuna",
+    "US": "ES"
+  },
+  {
+    "INEP": 21323003,
+    "ID": 2211997,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM MARIA DA CONCEICAO DE OLIVEIRA",
+    "MUNICIPIO": "Aldeias Altas",
+    "US": "MA"
+  },
+  {
+    "INEP": 43188583,
+    "ID": 2211926,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI DONA ELISA WARPECHOWSKI",
+    "MUNICIPIO": "Alecrim",
+    "US": "RS"
+  },
+  {
+    "INEP": 32071914,
+    "ID": 2212204,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI BRAS LACERDA AMIGO",
+    "MUNICIPIO": "Conceicao do Castelo",
+    "US": "BA"
+  },
+  {
+    "INEP": 21212783,
+    "ID": 2213040,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JI CLEUZA FERNANDES BARBOSA",
+    "MUNICIPIO": "Itaipava do Grajau",
+    "US": "ES"
+  },
+  {
+    "INEP": 21241929,
+    "ID": 2211993,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JI PEQUENO PRINCIPE",
+    "MUNICIPIO": "Fortuna",
+    "US": "ES"
+  },
+  {
+    "INEP": 21068470,
+    "ID": 2212221,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PRE ESCOLA FRANCISCA PEREIRA DE JESUS",
+    "MUNICIPIO": "Godofredo Viana",
+    "US": "ES"
+  },
+  {
+    "INEP": 21192170,
+    "ID": 2211658,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "PRE ESCOLA FRANCISCA PEREIRA BORGES",
+    "MUNICIPIO": "Godofredo Viana",
+    "US": "ES"
+  },
+  {
+    "INEP": 41415221,
+    "ID": 2211715,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ZILDA ARNS NEUMANN E M DRA EI EF M ED E",
+    "MUNICIPIO": "Balsa Nova",
+    "US": "PR"
+  },
+  {
+    "INEP": 41154266,
+    "ID": 2211849,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA LUIZA P MATOS C M E I PROFA",
+    "MUNICIPIO": "Jaguariaiva",
+    "US": "SP"
+  },
+  {
+    "INEP": 31238279,
+    "ID": 2212258,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PEM LICAO",
+    "MUNICIPIO": "Caparao",
+    "US": "BA"
+  },
+  {
+    "INEP": 31356581,
+    "ID": 2211645,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL NINITA AMARAL",
+    "MUNICIPIO": "Sao Joaquim de Bicas",
+    "US": "SP"
+  },
+  {
+    "INEP": 31250864,
+    "ID": 2212186,
+    "OPERADORA": "ARION",
+    "ESCOLA": "C EDUC INF EVA FREIRE",
+    "MUNICIPIO": "Itambacuri",
+    "US": "ES"
+  },
+  {
+    "INEP": 31251739,
+    "ID": 2211947,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNCIPAL DE EDUCACAO INFANTIL MAIRA MARIA DE SOUSA E SOUSA",
+    "MUNICIPIO": "Felisburgo",
+    "US": "ES"
+  },
+  {
+    "INEP": 31251381,
+    "ID": 2212399,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PRE ESCOLAR MUNICIPAL PERIQUITINHO VERDE",
+    "MUNICIPIO": "Felisburgo",
+    "US": "ES"
+  },
+  {
+    "INEP": 11050500,
+    "ID": 2212215,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI SONHO INFANTIL",
+    "MUNICIPIO": "Urupa",
+    "US": "GO"
+  },
+  {
+    "INEP": 43173403,
+    "ID": 2212175,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI MUNDO DOS SONHOS",
+    "MUNICIPIO": "Butia",
+    "US": "RS"
+  },
+  {
+    "INEP": 31359777,
+    "ID": 2212336,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL SEMENTINHA DO SABER",
+    "MUNICIPIO": "Estrela do Indaia",
+    "US": "ES"
+  },
+  {
+    "INEP": 29371759,
+    "ID": 2211703,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL LAURA ROCHA",
+    "MUNICIPIO": "Maiquinique",
+    "US": "SP"
+  },
+  {
+    "INEP": 31329134,
+    "ID": 2212202,
+    "OPERADORA": "ARION",
+    "ESCOLA": "C EDUC BEM ME QUER",
+    "MUNICIPIO": "Sao Joao do Pacui",
+    "US": "SP"
+  },
+  {
+    "INEP": 41383249,
+    "ID": 2212393,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MUNDO ENCANTADO C M E I",
+    "MUNICIPIO": "Virmond",
+    "US": "GO"
+  },
+  {
+    "INEP": 29018420,
+    "ID": 2211695,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA JULIA MARIA DA CONCEICAO",
+    "MUNICIPIO": "Campo Alegre de Lourdes",
+    "US": "BA"
+  },
+  {
+    "INEP": 31264741,
+    "ID": 2211735,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PEM REINO ENCANTADO",
+    "MUNICIPIO": "Alvarenga",
+    "US": "MG"
+  },
+  {
+    "INEP": 43138470,
+    "ID": 2212283,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESC MUN ENS FUN FRANCISCO JOSE PEREIRA",
+    "MUNICIPIO": "Sao Jose do Norte",
+    "US": "SP"
+  },
+  {
+    "INEP": 43089127,
+    "ID": 2212061,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESC MUN ENS FUN CARLOS GOMES POLO I",
+    "MUNICIPIO": "Nao-Me-Toque",
+    "US": "SP"
+  },
+  {
+    "INEP": 31376094,
+    "ID": 2212414,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM CORONEL LUIZ COUTINHO",
+    "MUNICIPIO": "Guiricema",
+    "US": "ES"
+  },
+  {
+    "INEP": 29036127,
+    "ID": 2212019,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL PROFESSORA MARIA ESTELLA RODRIGUES FERREIRA",
+    "MUNICIPIO": "Rodelas",
+    "US": "SP"
+  },
+  {
+    "INEP": 43205895,
+    "ID": 2212148,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEF EPONINA FRANCO GALVAO",
+    "MUNICIPIO": "Boa Vista das Missoes",
+    "US": "RS"
+  },
+  {
+    "INEP": 29115523,
+    "ID": 2211779,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL SILVIO MUTTE",
+    "MUNICIPIO": "Sitio do Quinto",
+    "US": "GO"
+  },
+  {
+    "INEP": 29128005,
+    "ID": 2212462,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESC MUL PROF MARIA LAURA DA",
+    "MUNICIPIO": "Cipo",
+    "US": "BA"
+  },
+  {
+    "INEP": 29177928,
+    "ID": 2211571,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL ENG MARIO LISBOA SAMPAIO",
+    "MUNICIPIO": "Itaparica",
+    "US": "ES"
+  },
+  {
+    "INEP": 43129404,
+    "ID": 2212154,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEIF BENTO GONCALVES",
+    "MUNICIPIO": "Caraa",
+    "US": "BA"
+  },
+  {
+    "INEP": 29284066,
+    "ID": 2211784,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL JOSE REBOUCAS LEITE",
+    "MUNICIPIO": "Itororo",
+    "US": "SP"
+  },
+  {
+    "INEP": 29284562,
+    "ID": 2211785,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL ISAURA PEREIRA DE SANTANA MEIRA",
+    "MUNICIPIO": "Maiquinique",
+    "US": "SP"
+  },
+  {
+    "INEP": 29296498,
+    "ID": 2212156,
+    "OPERADORA": "ARION",
+    "ESCOLA": "GRUPO ESCOLAR AIDA NO DA SILVA",
+    "MUNICIPIO": "Camacan",
+    "US": "PE"
+  },
+  {
+    "INEP": 29332001,
+    "ID": 2212161,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA NOSSA SENHORA APARECIDA",
+    "MUNICIPIO": "Macarani",
+    "US": "SP"
+  },
+  {
+    "INEP": 41122470,
+    "ID": 2212211,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANTONIO TUPY PINHEIRO E M PROF EF",
+    "MUNICIPIO": "Porto Amazonas",
+    "US": "SP"
+  },
+  {
+    "INEP": 41105389,
+    "ID": 2212213,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESPIGAO ALTO E M EI EF",
+    "MUNICIPIO": "Espigao Alto do Iguacu",
+    "US": "ES"
+  },
+  {
+    "INEP": 41019610,
+    "ID": 2212439,
+    "OPERADORA": "ARION",
+    "ESCOLA": "SAO JOSE E M EF",
+    "MUNICIPIO": "Centenario do Sul",
+    "US": "BA"
+  },
+  {
+    "INEP": 41006267,
+    "ID": 2212000,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JOSE VICENTE DA SILVA E M EF",
+    "MUNICIPIO": "Ipora",
+    "US": "ES"
+  },
+  {
+    "INEP": 33004420,
+    "ID": 2212442,
+    "OPERADORA": "ARION",
+    "ESCOLA": "E M VARGEM ALEGRE",
+    "MUNICIPIO": "Varre-Sai",
+    "US": "GO"
+  },
+  {
+    "INEP": 33024596,
+    "ID": 2213055,
+    "OPERADORA": "ARION",
+    "ESCOLA": "E E MUNICIPALIZADA MANUEL BITTENCOURT DA SILVA JUNIOR",
+    "MUNICIPIO": "Sao Sebastiao do Alto",
+    "US": "GO"
+  },
+  {
+    "INEP": 33145750,
+    "ID": 2213056,
+    "OPERADORA": "ARION",
+    "ESCOLA": "E M CRESCENDO E APRENDENDO",
+    "MUNICIPIO": "Sao Sebastiao do Alto",
+    "US": "GO"
+  },
+  {
+    "INEP": 21001707,
+    "ID": 2211654,
+    "OPERADORA": "ARION",
+    "ESCOLA": "UE JOAO GOULART",
+    "MUNICIPIO": "Bacuri",
+    "US": "MA"
+  },
+  {
+    "INEP": 21274355,
+    "ID": 2211995,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMBCB II DE JULHO UNIDADE XXIV EM RISA BELFORT PIRES ALVES",
+    "MUNICIPIO": "Cantanhede",
+    "US": "BA"
+  },
+  {
+    "INEP": 23014920,
+    "ID": 2212125,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JOAO EUCLIDES DE MORAIS EEF",
+    "MUNICIPIO": "Vicosa do Ceara",
+    "US": "GO"
+  },
+  {
+    "INEP": 27026906,
+    "ID": 2212352,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO BASICA MANOEL TOLEDO COSTA",
+    "MUNICIPIO": "Cajueiro",
+    "US": "PE"
+  },
+  {
+    "INEP": 29157080,
+    "ID": 2211897,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL PEDRO CORREIA DAMASCENO",
+    "MUNICIPIO": "Esplanada",
+    "US": "ES"
+  },
+  {
+    "INEP": 21206309,
+    "ID": 2211659,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PRG ENS JVNS ADLS DE POCAO DE PEDRAS",
+    "MUNICIPIO": "Pocao de Pedras",
+    "US": "SP"
+  },
+  {
+    "INEP": 21223718,
+    "ID": 2211762,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM HILDO OLIVEIRA ROCHA",
+    "MUNICIPIO": "Cantanhede",
+    "US": "BA"
+  },
+  {
+    "INEP": 21500355,
+    "ID": 2211661,
+    "OPERADORA": "ARION",
+    "ESCOLA": "UEB PROF ANTONIA SAMPAIO RIBEIRO",
+    "MUNICIPIO": "Miranda do Norte",
+    "US": "SP"
+  },
+  {
+    "INEP": 22018760,
+    "ID": 2211871,
+    "OPERADORA": "ARION",
+    "ESCOLA": "UNID ESC FRANCISCO DAS CHAGAS LOPES SOARES",
+    "MUNICIPIO": "Beneditinos",
+    "US": "PI"
+  },
+  {
+    "INEP": 29377331,
+    "ID": 2211565,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE CASULO GRACINHA LOUREIRO",
+    "MUNICIPIO": "Camacan",
+    "US": "PE"
+  },
+  {
+    "INEP": 15176355,
+    "ID": 2212257,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE PROFESSORA RAIMUNDA BORGES DA SILVA SANTOS",
+    "MUNICIPIO": "Santana do Araguaia",
+    "US": "SP"
+  },
+  {
+    "INEP": 15227413,
+    "ID": 2212363,
+    "OPERADORA": "ARION",
+    "ESCOLA": "E M E I PEQUENO PRINCIPE",
+    "MUNICIPIO": "Pacaja",
+    "US": "SP"
+  },
+  {
+    "INEP": 29418275,
+    "ID": 2212030,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE PREESCOLA CRIANCA FELIZ IV",
+    "MUNICIPIO": "Teofilandia",
+    "US": "GO"
+  },
+  {
+    "INEP": 21271160,
+    "ID": 2211689,
+    "OPERADORA": "ARION",
+    "ESCOLA": "UND DE EDC BASC EDUC INFANT ALZIRA MOURAO",
+    "MUNICIPIO": "Porto Franco",
+    "US": "SP"
+  },
+  {
+    "INEP": 52078353,
+    "ID": 2211581,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMEI LEONISIA MARGARIDA DE OLIVEIRA",
+    "MUNICIPIO": "Cachoeira Alta",
+    "US": "PE"
+  },
+  {
+    "INEP": 23220198,
+    "ID": 2211582,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRIANCA FELIZ DE MILHA CRECHE COM",
+    "MUNICIPIO": "Milha",
+    "US": "SP"
+  },
+  {
+    "INEP": 23260815,
+    "ID": 2212158,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA DE LOURDES DAMASCENO MARQUES CMEI",
+    "MUNICIPIO": "Piquet Carneiro",
+    "US": "SP"
+  },
+  {
+    "INEP": 31275328,
+    "ID": 2211737,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMEI ESTRELINHA AZUL",
+    "MUNICIPIO": "Frei Lagonegro",
+    "US": "ES"
+  },
+  {
+    "INEP": 24068802,
+    "ID": 2211906,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLINHA DA PROVIDENCIA",
+    "MUNICIPIO": "Ares",
+    "US": "RN"
+  },
+  {
+    "INEP": 51090546,
+    "ID": 2212159,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI SAO FRANCISCO DE ASSIS",
+    "MUNICIPIO": "Canarana",
+    "US": "BA"
+  },
+  {
+    "INEP": 51070944,
+    "ID": 2211908,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMEI PROF ANA CELIA",
+    "MUNICIPIO": "Nova Xavantina",
+    "US": "SP"
+  },
+  {
+    "INEP": 26019850,
+    "ID": 2212262,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI MARIA MADALENA XAVIER DE LIRA",
+    "MUNICIPIO": "Sao Jose do Egito",
+    "US": "SP"
+  },
+  {
+    "INEP": 27047903,
+    "ID": 2211909,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO BASICA DESEMBARGADOR TENORIO",
+    "MUNICIPIO": "Quebrangulo",
+    "US": "SP"
+  },
+  {
+    "INEP": 50032186,
+    "ID": 2211693,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO EDUCACIONAL INFANTIL GISELY RIBEIRO HIPPLER",
+    "MUNICIPIO": "Brasilandia",
+    "US": "MS"
+  },
+  {
+    "INEP": 31325333,
+    "ID": 2212201,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI PROFA DONA DORINHA",
+    "MUNICIPIO": "Guaraciaba",
+    "US": "ES"
+  },
+  {
+    "INEP": 43205038,
+    "ID": 2212040,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL CRIANCA FELIZ",
+    "MUNICIPIO": "Sao Domingos do Sul",
+    "US": "SP"
+  },
+  {
+    "INEP": 43196055,
+    "ID": 2211914,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI PEQUENO PRINCIPE",
+    "MUNICIPIO": "Maquine",
+    "US": "SP"
+  },
+  {
+    "INEP": 43151604,
+    "ID": 2211606,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL PEQUENO APRENDIZ",
+    "MUNICIPIO": "Sao Jose do Norte",
+    "US": "SP"
+  },
+  {
+    "INEP": 43058795,
+    "ID": 2211928,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI CARMELINDA IGNEZ COCCO MARIANI",
+    "MUNICIPIO": "Pinhal Grande",
+    "US": "SP"
+  },
+  {
+    "INEP": 43196004,
+    "ID": 2211718,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI VOVO JURA",
+    "MUNICIPIO": "Cidreira",
+    "US": "BA"
+  },
+  {
+    "INEP": 43002161,
+    "ID": 2212390,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI PASTORA LIANE BOECK SCHMITT",
+    "MUNICIPIO": "Paraiso do Sul",
+    "US": "SP"
+  },
+  {
+    "INEP": 29430437,
+    "ID": 2211722,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL CAMPINHOS",
+    "MUNICIPIO": "Coronel Joao Sa",
+    "US": "ES"
+  },
+  {
+    "INEP": 29477620,
+    "ID": 2211612,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRISTINA CELIA DE JESUS SACRAMENTO",
+    "MUNICIPIO": "Sao Francisco do Conde",
+    "US": "SP"
+  },
+  {
+    "INEP": 31088137,
+    "ID": 2212293,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM JD INF JOSEFINA AZEREDO",
+    "MUNICIPIO": "Janauba",
+    "US": "SP"
+  },
+  {
+    "INEP": 31228460,
+    "ID": 2212069,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PEM URSINHO PUF",
+    "MUNICIPIO": "Novo Oriente de Minas",
+    "US": "SP"
+  },
+  {
+    "INEP": 23265663,
+    "ID": 2211583,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANGELA MARIA DE GOIS CEI PROFESSORA",
+    "MUNICIPIO": "Icapui",
+    "US": "ES"
+  },
+  {
+    "INEP": 23245433,
+    "ID": 2211672,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA IBELENA BATISTA SOUTO DOS SANTOS CRECHE PRO-INFANCIA",
+    "MUNICIPIO": "Araripe",
+    "US": "CE"
+  },
+  {
+    "INEP": 31334979,
+    "ID": 2211690,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL SONHO ENCANTADO",
+    "MUNICIPIO": "Periquito",
+    "US": "SP"
+  },
+  {
+    "INEP": 31253359,
+    "ID": 2212310,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM PROFA GERALDA SALGADO",
+    "MUNICIPIO": "Urucania",
+    "US": "GO"
+  },
+  {
+    "INEP": 41379853,
+    "ID": 2211935,
+    "OPERADORA": "ARION",
+    "ESCOLA": "VICENTE DE CONTI C M E I PROF",
+    "MUNICIPIO": "Porecatu",
+    "US": "SP"
+  },
+  {
+    "INEP": 31281191,
+    "ID": 2211834,
+    "OPERADORA": "ARION",
+    "ESCOLA": "C MUN EDUC INF MAE NINHA",
+    "MUNICIPIO": "Juramento",
+    "US": "SP"
+  },
+  {
+    "INEP": 41148860,
+    "ID": 2211739,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA AP B DAMACENA C M E I PROFA",
+    "MUNICIPIO": "Mariluz",
+    "US": "SP"
+  },
+  {
+    "INEP": 31296589,
+    "ID": 2212411,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM PROFA HILDA LOBAO REZENDE",
+    "MUNICIPIO": "Maripa de Minas",
+    "US": "SP"
+  },
+  {
+    "INEP": 31318701,
+    "ID": 2212090,
+    "OPERADORA": "ARION",
+    "ESCOLA": "C MUN EDUC INF CARINE S C MOREIRA",
+    "MUNICIPIO": "Natercia",
+    "US": "SP"
+  },
+  {
+    "INEP": 31336246,
+    "ID": 2211981,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEIM ALCINA LADEIRA FRAGA",
+    "MUNICIPIO": "Barroso",
+    "US": "MG"
+  },
+  {
+    "INEP": 31232343,
+    "ID": 2212070,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI DONA RITA MARTINS",
+    "MUNICIPIO": "Rio Piracicaba",
+    "US": "SP"
+  },
+  {
+    "INEP": 23231980,
+    "ID": 2211771,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA DE OLIVEIRA FILGUEIRA EEI",
+    "MUNICIPIO": "Potiretama",
+    "US": "SP"
+  },
+  {
+    "INEP": 31365629,
+    "ID": 2211839,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI JOSE RODRIGUES VALENTE",
+    "MUNICIPIO": "Fervedouro",
+    "US": "ES"
+  },
+  {
+    "INEP": 32012721,
+    "ID": 2211841,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL INES ALTOE FRANCO",
+    "MUNICIPIO": "Marilandia",
+    "US": "SP"
+  },
+  {
+    "INEP": 32076932,
+    "ID": 2211742,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL DAILTON LUIZ MAGNAGO",
+    "MUNICIPIO": "Marilandia",
+    "US": "SP"
+  },
+  {
+    "INEP": 32123051,
+    "ID": 2212094,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMEI MARIA KNIDEL LUBE",
+    "MUNICIPIO": "Marechal Floriano",
+    "US": "SP"
+  },
+  {
+    "INEP": 35495384,
+    "ID": 2212095,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ATTILIO BURIN PROF EM",
+    "MUNICIPIO": "Sao Simao",
+    "US": "GO"
+  },
+  {
+    "INEP": 33191344,
+    "ID": 2211846,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI PARQUE MAMBUCABA II",
+    "MUNICIPIO": "Angra dos Reis",
+    "US": "RJ"
+  },
+  {
+    "INEP": 43203922,
+    "ID": 2212107,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI MENINO DEUS",
+    "MUNICIPIO": "Santo Antonio da Patrulha",
+    "US": "SP"
+  },
+  {
+    "INEP": 17038596,
+    "ID": 2212431,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO INFANTIL TIA ARA",
+    "MUNICIPIO": "Buriti do Tocantins",
+    "US": "TO"
+  },
+  {
+    "INEP": 17046947,
+    "ID": 2212331,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE E PRE ESCOLA MUNICIPAL BEM ME QUER",
+    "MUNICIPIO": "Cristalandia",
+    "US": "ES"
+  },
+  {
+    "INEP": 23264268,
+    "ID": 2212129,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CANDIDA FERREIRA DE PAULA",
+    "MUNICIPIO": "Varjota",
+    "US": "GO"
+  },
+  {
+    "INEP": 21249504,
+    "ID": 2211994,
+    "OPERADORA": "ARION",
+    "ESCOLA": "UNIDADE DE EDUCACAO INFANTIL PROFESSORA RAIMUNDA SILVA DE SOUSA",
+    "MUNICIPIO": "Cidelandia",
+    "US": "BA"
+  },
+  {
+    "INEP": 22109625,
+    "ID": 2211880,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL JOAQUIM PARENTE",
+    "MUNICIPIO": "agua Branca",
+    "US": "PI"
+  },
+  {
+    "INEP": 22142835,
+    "ID": 2211670,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE PROFESSOR ANTONIO BARBOSA CARDOSO",
+    "MUNICIPIO": "Sao Pedro do Piaui",
+    "US": "GO"
+  },
+  {
+    "INEP": 23015861,
+    "ID": 2212126,
+    "OPERADORA": "ARION",
+    "ESCOLA": "INES EDITE PONTES CRECHE",
+    "MUNICIPIO": "Frecheirinha",
+    "US": "ES"
+  },
+  {
+    "INEP": 23222310,
+    "ID": 2212128,
+    "OPERADORA": "ARION",
+    "ESCOLA": "SOSSEGO DA MAMAE CEI",
+    "MUNICIPIO": "Barro",
+    "US": "CE"
+  },
+  {
+    "INEP": 41004701,
+    "ID": 2211765,
+    "OPERADORA": "ARION",
+    "ESCOLA": "SALTINHO DO OESTE E M DE EI EF",
+    "MUNICIPIO": "Alto Piquiri",
+    "US": "PR"
+  },
+  {
+    "INEP": 23255471,
+    "ID": 2211886,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL MUNICIPAL DE TEMPO INTEGRAL SAO FRANCISCO",
+    "MUNICIPIO": "Baturite",
+    "US": "CE"
+  },
+  {
+    "INEP": 25287931,
+    "ID": 2212347,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE COMUNITARIA INEZ DINIZ LIMA",
+    "MUNICIPIO": "Princesa Isabel",
+    "US": "SP"
+  },
+  {
+    "INEP": 23271310,
+    "ID": 2211773,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL MUNICIPAL DE TEMPO INTEGRAL ROCILDA GERMANO ARRUDA",
+    "MUNICIPIO": "Baturite",
+    "US": "CE"
+  },
+  {
+    "INEP": 51087987,
+    "ID": 2212008,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO EDUCACIONAL MUNICIPAL PEQUENO CIDADAO",
+    "MUNICIPIO": "Cotriguacu",
+    "US": "ES"
+  },
+  {
+    "INEP": 25116630,
+    "ID": 2212230,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE JOSELIA LUCAS DE PONTES SANTA MARIA",
+    "MUNICIPIO": "Pirpirituba",
+    "US": "SP"
+  },
+  {
+    "INEP": 31366722,
+    "ID": 2211876,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI - SAO BENEDITO",
+    "MUNICIPIO": "Teofilo Otoni",
+    "US": "GO"
+  },
+  {
+    "INEP": 26024349,
+    "ID": 2212231,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL MAURICIO CANDIDO FERREIRA",
+    "MUNICIPIO": "Triunfo",
+    "US": "GO"
+  },
+  {
+    "INEP": 41551893,
+    "ID": 2211714,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA M MENDES E M EI EF MOD ED ESP",
+    "MUNICIPIO": "Leopolis",
+    "US": "SP"
+  },
+  {
+    "INEP": 26159082,
+    "ID": 2211679,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE URSULINA TEREZA DE JESUS",
+    "MUNICIPIO": "Capoeiras",
+    "US": "BA"
+  },
+  {
+    "INEP": 26338610,
+    "ID": 2212459,
+    "OPERADORA": "ARION",
+    "ESCOLA": "SERVICO DE CONVIVENCIA E FORTALECIMENTO DE VINCULOS I",
+    "MUNICIPIO": "Sao Jose do Egito",
+    "US": "SP"
+  },
+  {
+    "INEP": 27026795,
+    "ID": 2212357,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EDUCACAO INFANTIL CASINHA DA CRIANCA CAJUEIRENSE",
+    "MUNICIPIO": "Cajueiro",
+    "US": "PE"
+  },
+  {
+    "INEP": 27050246,
+    "ID": 2212143,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL JOAO TRAJANO DOS SANTOS",
+    "MUNICIPIO": "Coruripe",
+    "US": "ES"
+  },
+  {
+    "INEP": 27230716,
+    "ID": 2212018,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL VEREADOR LUIZ DE FRANCA NUNES",
+    "MUNICIPIO": "Feliz Deserto",
+    "US": "ES"
+  },
+  {
+    "INEP": 50020315,
+    "ID": 2212240,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL ITAMAR EVARISTO DA SILVA",
+    "MUNICIPIO": "Eldorado",
+    "US": "ES"
+  },
+  {
+    "INEP": 29065550,
+    "ID": 2211684,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESC MUNICIPAL MANOEL NOVAIS",
+    "MUNICIPIO": "Lapao",
+    "US": "SP"
+  },
+  {
+    "INEP": 43205739,
+    "ID": 2212244,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI RECANTO DOS SONHOS",
+    "MUNICIPIO": "Sao Joao do Polesine",
+    "US": "SP"
+  },
+  {
+    "INEP": 29090024,
+    "ID": 2212353,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA VITOR BEZERRA LOLA",
+    "MUNICIPIO": "Anguera",
+    "US": "BA"
+  },
+  {
+    "INEP": 29129001,
+    "ID": 2212149,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEIEF RUI BARBOSA",
+    "MUNICIPIO": "Heliopolis",
+    "US": "ES"
+  },
+  {
+    "INEP": 43197701,
+    "ID": 2212150,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMI SANTA LUCIA",
+    "MUNICIPIO": "Serafina Correa",
+    "US": "GO"
+  },
+  {
+    "INEP": 43197698,
+    "ID": 2212151,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PRE-ESCOLAR CASTELINHO DO SABER",
+    "MUNICIPIO": "Serafina Correa",
+    "US": "GO"
+  },
+  {
+    "INEP": 43197680,
+    "ID": 2211570,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL INFANTIL PEDACINHO DE CEU",
+    "MUNICIPIO": "Serafina Correa",
+    "US": "GO"
+  },
+  {
+    "INEP": 43192831,
+    "ID": 2212022,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL CANTINHO DA MONICA",
+    "MUNICIPIO": "Coqueiro Baixo",
+    "US": "BA"
+  },
+  {
+    "INEP": 29214858,
+    "ID": 2212356,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL PROFESSORA AUGUSTA GOMES ROCHA",
+    "MUNICIPIO": "Contendas do Sincora",
+    "US": "BA"
+  },
+  {
+    "INEP": 43183514,
+    "ID": 2211572,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI SEMENTINHA DO AMANHA",
+    "MUNICIPIO": "Pontao",
+    "US": "SP"
+  },
+  {
+    "INEP": 43182984,
+    "ID": 2211782,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL PARAISO DA CRIANCA",
+    "MUNICIPIO": "Sao Miguel das Missoes",
+    "US": "SP"
+  },
+  {
+    "INEP": 43182704,
+    "ID": 2211573,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL PEIXINHO DOURADO",
+    "MUNICIPIO": "Palmares do Sul",
+    "US": "SP"
+  },
+  {
+    "INEP": 29235057,
+    "ID": 2211783,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CASA DO CONHECIMENTO PROFESSORA IRACEMA SENA SOUZA",
+    "MUNICIPIO": "Santa Ines",
+    "US": "SP"
+  },
+  {
+    "INEP": 43176755,
+    "ID": 2212359,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI PROFESSOR EDWALDO BERNARDO HOFFMANN",
+    "MUNICIPIO": "Restinga Seca",
+    "US": "SP"
+  },
+  {
+    "INEP": 29270723,
+    "ID": 2212251,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL MANOEL MOREIRA DA SILVA",
+    "MUNICIPIO": "Caetanos",
+    "US": "PE"
+  },
+  {
+    "INEP": 41379454,
+    "ID": 2212298,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EGIDIO MOURA C M E I",
+    "MUNICIPIO": "Ibaiti",
+    "US": "ES"
+  },
+  {
+    "INEP": 29283620,
+    "ID": 2212253,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE TIA GENY",
+    "MUNICIPIO": "Itarantim",
+    "US": "SP"
+  },
+  {
+    "INEP": 29320500,
+    "ID": 2212270,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA DURVAL MATA PIRES",
+    "MUNICIPIO": "Ibirapua",
+    "US": "ES"
+  },
+  {
+    "INEP": 29320747,
+    "ID": 2212042,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL PROFESSORA EMILIA MONTEIRO RODRIGUES",
+    "MUNICIPIO": "Itabela",
+    "US": "ES"
+  },
+  {
+    "INEP": 29322774,
+    "ID": 2211592,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL NOSSA SENHORA DA PENHA",
+    "MUNICIPIO": "Itanhem",
+    "US": "ES"
+  },
+  {
+    "INEP": 29322782,
+    "ID": 2212044,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL SADY TEIXEIRA",
+    "MUNICIPIO": "Itanhem",
+    "US": "ES"
+  },
+  {
+    "INEP": 41374584,
+    "ID": 2211939,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANJO DA GUARDA C M E I",
+    "MUNICIPIO": "Roncador",
+    "US": "SP"
+  },
+  {
+    "INEP": 29345731,
+    "ID": 2212272,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLINHA FAVO DE MEL",
+    "MUNICIPIO": "Ibicoara",
+    "US": "ES"
+  },
+  {
+    "INEP": 43016995,
+    "ID": 2211701,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI PINGO DE GENTE",
+    "MUNICIPIO": "Cerro Grande do Sul",
+    "US": "BA"
+  },
+  {
+    "INEP": 29369274,
+    "ID": 2212274,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL",
+    "MUNICIPIO": "Varzea Nova",
+    "US": "GO"
+  },
+  {
+    "INEP": 29374197,
+    "ID": 2211705,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL INFANTIL HORACIO FERREIRA LIMA",
+    "MUNICIPIO": "Iuiu",
+    "US": "SP"
+  },
+  {
+    "INEP": 29376475,
+    "ID": 2213069,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DULCE VIANA CARDOSO",
+    "MUNICIPIO": "erico Cardoso",
+    "US": "ES"
+  },
+  {
+    "INEP": 43007686,
+    "ID": 2211597,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI ANTONIO ALFREDO DE SOUZA",
+    "MUNICIPIO": "agua Santa",
+    "US": "RS"
+  },
+  {
+    "INEP": 29394953,
+    "ID": 2211918,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA DE EDUCACAO INFANTIL SANTA ROSA",
+    "MUNICIPIO": "Guajeru",
+    "US": "ES"
+  },
+  {
+    "INEP": 29399319,
+    "ID": 2212276,
+    "OPERADORA": "ARION",
+    "ESCOLA": "NUCLEO DE NECESSIDADES EDUCACIONAIS ESPECIAIS",
+    "MUNICIPIO": "Coracao de Maria",
+    "US": "BA"
+  },
+  {
+    "INEP": 29406161,
+    "ID": 2211599,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL ANDARAI",
+    "MUNICIPIO": "Pirai do Norte",
+    "US": "SP"
+  },
+  {
+    "INEP": 42143896,
+    "ID": 2212050,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEIM BRANCA DE NEVE",
+    "MUNICIPIO": "Quilombo",
+    "US": "SP"
+  },
+  {
+    "INEP": 29412471,
+    "ID": 2211919,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMEI- CENTRO MUNICIPAL DE EDUCACAO INFANTIL DURVALINA CARNEIRO",
+    "MUNICIPIO": "Boa Vista do Tupim",
+    "US": "BA"
+  },
+  {
+    "INEP": 29419883,
+    "ID": 2211600,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EDUCANDARIO ELZA RIOS DA COSTA",
+    "MUNICIPIO": "Sao Domingos",
+    "US": "SP"
+  },
+  {
+    "INEP": 29423430,
+    "ID": 2212053,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE LAR SANTO ANTONIO",
+    "MUNICIPIO": "Teolandia",
+    "US": "GO"
+  },
+  {
+    "INEP": 29426596,
+    "ID": 2211711,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO MUNICIPAL",
+    "MUNICIPIO": "Rio de Contas",
+    "US": "SP"
+  },
+  {
+    "INEP": 22041699,
+    "ID": 2212335,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "UNIDADE OPERACIONAL PEQUENO PRINCIPE",
+    "MUNICIPIO": "agua Branca",
+    "US": "PI"
+  },
+  {
+    "INEP": 41551907,
+    "ID": 2212382,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CECILIA MEIRELES C M E I",
+    "MUNICIPIO": "Tuneiras do Oeste",
+    "US": "GO"
+  },
+  {
+    "INEP": 41375084,
+    "ID": 2212188,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFESSORA ZAIRA",
+    "MUNICIPIO": "Ribeirao do Pinhal",
+    "US": "SP"
+  },
+  {
+    "INEP": 41387988,
+    "ID": 2211808,
+    "OPERADORA": "ARION",
+    "ESCOLA": "APARECIDA SOLANGE SANTOS GOIS C M E I",
+    "MUNICIPIO": "Altamira do Parana",
+    "US": "PR"
+  },
+  {
+    "INEP": 29457874,
+    "ID": 2211925,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE MUNICIPAL JOAQUIM DIAS DOS SANTOS",
+    "MUNICIPIO": "Caraibas",
+    "US": "BA"
+  },
+  {
+    "INEP": 29459850,
+    "ID": 2212072,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE MUNICIPAL AMALIA SEBASTIANA DA ROCHA",
+    "MUNICIPIO": "Pau Brasil",
+    "US": "SP"
+  },
+  {
+    "INEP": 29461103,
+    "ID": 2211819,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CMEI PROFESSORA MARIA CUNHA",
+    "MUNICIPIO": "Teixeira de Freitas",
+    "US": "GO"
+  },
+  {
+    "INEP": 29464811,
+    "ID": 2211726,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE RECURSOS MULTIFUNCIONAIS",
+    "MUNICIPIO": "Anguera",
+    "US": "BA"
+  },
+  {
+    "INEP": 29469031,
+    "ID": 2212400,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESC MUN INFANTIL EDILEUZA ROCHA CARVALHO",
+    "MUNICIPIO": "Mortugaba",
+    "US": "SP"
+  },
+  {
+    "INEP": 29472075,
+    "ID": 2211620,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE ATENDIMENTO EDUCACIONAL ESPECIALIZADO DE IBIPITANGA - VALTER CHAVES COIMBRA",
+    "MUNICIPIO": "Ibipitanga",
+    "US": "ES"
+  },
+  {
+    "INEP": 41365771,
+    "ID": 2211829,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MENINO JESUS C M E I",
+    "MUNICIPIO": "Terra Rica",
+    "US": "GO"
+  },
+  {
+    "INEP": 29475414,
+    "ID": 2211728,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL - CMEI",
+    "MUNICIPIO": "Caldeirao Grande",
+    "US": "PE"
+  },
+  {
+    "INEP": 26063379,
+    "ID": 2212453,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI ESCOLA SAGRADO CORACAO DE JESUS",
+    "MUNICIPIO": "Tacaimbo",
+    "US": "GO"
+  },
+  {
+    "INEP": 29478669,
+    "ID": 2211820,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE PROINFANCIA PROFESSORA VERBENA MENDES LUZ",
+    "MUNICIPIO": "Pindai",
+    "US": "SP"
+  },
+  {
+    "INEP": 41379543,
+    "ID": 2212297,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EDNA MARIA DE ALBUQUERQUE C M E I",
+    "MUNICIPIO": "Perobal",
+    "US": "SP"
+  },
+  {
+    "INEP": 26146460,
+    "ID": 2212235,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL SANTO ANTONIO",
+    "MUNICIPIO": "Itapetim",
+    "US": "RJ"
+  },
+  {
+    "INEP": 29482909,
+    "ID": 2212076,
+    "OPERADORA": "ARION",
+    "ESCOLA": "NUCLEO DE ATENDIMENTO PSICOSSOCIAL E EDUCACAO ESPECIAL - NAPEE",
+    "MUNICIPIO": "Itaete",
+    "US": "ES"
+  },
+  {
+    "INEP": 41375629,
+    "ID": 2212078,
+    "OPERADORA": "ARION",
+    "ESCOLA": "NOSSA SENHORA DE FATIMA C M E I",
+    "MUNICIPIO": "Faxinal",
+    "US": "ES"
+  },
+  {
+    "INEP": 41375351,
+    "ID": 2213053,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA JOANA PRESTES C M E I",
+    "MUNICIPIO": "Tunas do Parana",
+    "US": "GO"
+  },
+  {
+    "INEP": 31136646,
+    "ID": 2212083,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL ADEMAR NATALINO LONGATTI",
+    "MUNICIPIO": "Tiradentes",
+    "US": "GO"
+  },
+  {
+    "INEP": 31277622,
+    "ID": 2211832,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PRIMEIROS PASSOS",
+    "MUNICIPIO": "Pedra Dourada",
+    "US": "SP"
+  },
+  {
+    "INEP": 41371488,
+    "ID": 2211730,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PEQUENO PRINCIPE C M E I",
+    "MUNICIPIO": "Iguatu",
+    "US": "ES"
+  },
+  {
+    "INEP": 41371348,
+    "ID": 2212405,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRIANCA FELIZ C M E I",
+    "MUNICIPIO": "Brasilandia do Sul",
+    "US": "PR"
+  },
+  {
+    "INEP": 41371100,
+    "ID": 2212079,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JOAO PAULO II C M E I",
+    "MUNICIPIO": "Rio Bom",
+    "US": "SP"
+  },
+  {
+    "INEP": 41368878,
+    "ID": 2212190,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA WARD C M E I",
+    "MUNICIPIO": "Santa Maria do Oeste",
+    "US": "SP"
+  },
+  {
+    "INEP": 41367332,
+    "ID": 2212407,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANJO DA GUARDA C M E I",
+    "MUNICIPIO": "Santa Amelia",
+    "US": "SP"
+  },
+  {
+    "INEP": 41365801,
+    "ID": 2211945,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CUSTODIO S FERNANDES C M E I PROF",
+    "MUNICIPIO": "Terra Rica",
+    "US": "GO"
+  },
+  {
+    "INEP": 33131430,
+    "ID": 2212316,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL SEMENTES DO FUTURO",
+    "MUNICIPIO": "Quissama",
+    "US": "SP"
+  },
+  {
+    "INEP": 31136654,
+    "ID": 2211624,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL JOAO PIO",
+    "MUNICIPIO": "Tiradentes",
+    "US": "GO"
+  },
+  {
+    "INEP": 43007350,
+    "ID": 2212047,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI ALZIRA NUNES CEOLIN",
+    "MUNICIPIO": "Estrela Velha",
+    "US": "ES"
+  },
+  {
+    "INEP": 43193196,
+    "ID": 2212373,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL VO LAURA",
+    "MUNICIPIO": "Taquari",
+    "US": "GO"
+  },
+  {
+    "INEP": 31311812,
+    "ID": 2212413,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL MUNICIPAL ANTONIA BARBOSA",
+    "MUNICIPIO": "Pompeu",
+    "US": "SP"
+  },
+  {
+    "INEP": 41354486,
+    "ID": 2212087,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ALZEMIRO MOTTA C M E I",
+    "MUNICIPIO": "Pinhal de Sao Bento",
+    "US": "SP"
+  },
+  {
+    "INEP": 31241571,
+    "ID": 2211626,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL CONJUNTO HABITACIONAL JEFFERSON DE OLIVEIRA",
+    "MUNICIPIO": "Campanha",
+    "US": "BA"
+  },
+  {
+    "INEP": 31243663,
+    "ID": 2212409,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL PROFESSORA EMIDIA DE CARVALHO",
+    "MUNICIPIO": "Couto de Magalhaes de Minas",
+    "US": "ES"
+  },
+  {
+    "INEP": 41352599,
+    "ID": 2212308,
+    "OPERADORA": "ARION",
+    "ESCOLA": "SANTA TEREZINHA C M E I",
+    "MUNICIPIO": "Astorga",
+    "US": "PR"
+  },
+  {
+    "INEP": 41164482,
+    "ID": 2212309,
+    "OPERADORA": "ARION",
+    "ESCOLA": "GELTA SANTOS T DE FARIA C M E IPROFA",
+    "MUNICIPIO": "Tunas do Parana",
+    "US": "GO"
+  },
+  {
+    "INEP": 31248452,
+    "ID": 2212071,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA MUNICIPAL NILZA VIEIRA DE AZEREDO MELO",
+    "MUNICIPIO": "Lagoa Santa",
+    "US": "SP"
+  },
+  {
+    "INEP": 41157508,
+    "ID": 2211847,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ULYSSES PESSOA DE LIMA C M E I",
+    "MUNICIPIO": "Centenario do Sul",
+    "US": "BA"
+  },
+  {
+    "INEP": 41157141,
+    "ID": 2212321,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANDREI MUGNOL RIBEIRO C M E I PROF",
+    "MUNICIPIO": "Candoi",
+    "US": "BA"
+  },
+  {
+    "INEP": 31268704,
+    "ID": 2211641,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL ESTELITA GOMES DE TOLEDO DONA LILITA",
+    "MUNICIPIO": "Sericita",
+    "US": "GO"
+  },
+  {
+    "INEP": 15167917,
+    "ID": 2211990,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI NEIDE DE BRITO ALVES LOPES",
+    "MUNICIPIO": "Dom Eliseu",
+    "US": "ES"
+  },
+  {
+    "INEP": 41148665,
+    "ID": 2211851,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MARIA TEREZINHA Z FERREIRA C M E I",
+    "MUNICIPIO": "Mandaguari",
+    "US": "SP"
+  },
+  {
+    "INEP": 31313262,
+    "ID": 2211643,
+    "OPERADORA": "ARION",
+    "ESCOLA": "C EDUC INF MUN D ESMERALDA MARRA",
+    "MUNICIPIO": "Abadia dos Dourados",
+    "US": "MG"
+  },
+  {
+    "INEP": 31316440,
+    "ID": 2211751,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI IZABEL MARIA DE JESUS",
+    "MUNICIPIO": "Janauba",
+    "US": "SP"
+  },
+  {
+    "INEP": 31316458,
+    "ID": 2212103,
+    "OPERADORA": "ARION",
+    "ESCOLA": "PEM ANJO DA GUARDA",
+    "MUNICIPIO": "Janauba",
+    "US": "SP"
+  },
+  {
+    "INEP": 31320048,
+    "ID": 2212104,
+    "OPERADORA": "ARION",
+    "ESCOLA": "C MUN EDUC INF CRIANCA FELIZ",
+    "MUNICIPIO": "Verdelandia",
+    "US": "GO"
+  },
+  {
+    "INEP": 31320676,
+    "ID": 2212322,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL BRANCA DE NEVE",
+    "MUNICIPIO": "Francisco Sa",
+    "US": "ES"
+  },
+  {
+    "INEP": 43199615,
+    "ID": 2211896,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI BOA VISTA",
+    "MUNICIPIO": "Santiago",
+    "US": "SP"
+  },
+  {
+    "INEP": 31336858,
+    "ID": 2211982,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL CRIANCA FELIZ",
+    "MUNICIPIO": "Confins",
+    "US": "BA"
+  },
+  {
+    "INEP": 41115236,
+    "ID": 2212212,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ANTONIO GRESELLE E M EI EF",
+    "MUNICIPIO": "Bituruna",
+    "US": "PR"
+  },
+  {
+    "INEP": 41080904,
+    "ID": 2211646,
+    "OPERADORA": "ARION",
+    "ESCOLA": "NOSSA SRA DO ROSARIO E M C EI EF",
+    "MUNICIPIO": "Perola d'Oeste",
+    "US": "SP"
+  },
+  {
+    "INEP": 41074637,
+    "ID": 2211853,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JOSE HENRIQUE DA SILVA E M EI EF",
+    "MUNICIPIO": "Nova Aurora",
+    "US": "SP"
+  },
+  {
+    "INEP": 29061610,
+    "ID": 2212147,
+    "OPERADORA": "ARION",
+    "ESCOLA": "GRUPO ESCOLAR LUIS VIANA FILHO",
+    "MUNICIPIO": "Gentio do Ouro",
+    "US": "ES"
+  },
+  {
+    "INEP": 41041704,
+    "ID": 2211663,
+    "OPERADORA": "ARION",
+    "ESCOLA": "JOAO BATISTA BUENO E M EI EF",
+    "MUNICIPIO": "Sao Jeronimo da Serra",
+    "US": "SP"
+  },
+  {
+    "INEP": 31363138,
+    "ID": 2211872,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEMEI PREFEITO VICENTE MARCIANO DA ROCHA",
+    "MUNICIPIO": "Jeceaba",
+    "US": "SP"
+  },
+  {
+    "INEP": 41041305,
+    "ID": 2212226,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL NOEMIA BITTENCOURT CARNEIRO",
+    "MUNICIPIO": "Nova Santa Barbara",
+    "US": "SP"
+  },
+  {
+    "INEP": 43090265,
+    "ID": 2211810,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "EMEI PRIMEIROS PASSOS",
+    "MUNICIPIO": "Arambare",
+    "US": "RS"
+  },
+  {
+    "INEP": 31369497,
+    "ID": 2211999,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EM GUILHERME MANOEL DE FARIA",
+    "MUNICIPIO": "Mutum",
+    "US": "SP"
+  },
+  {
+    "INEP": 41010116,
+    "ID": 2212228,
+    "OPERADORA": "ARION",
+    "ESCOLA": "MENINO JESUS C M E I",
+    "MUNICIPIO": "Japura",
+    "US": "SP"
+  },
+  {
+    "INEP": 43212492,
+    "ID": 2212243,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL DONA DELICIA",
+    "MUNICIPIO": "Tres Cachoeiras",
+    "US": "GO"
+  },
+  {
+    "INEP": 41003730,
+    "ID": 2212340,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ALDA AGUIAR SILVEIRA C M E I",
+    "MUNICIPIO": "Sao Joao do Caiua",
+    "US": "SP"
+  },
+  {
+    "INEP": 33004498,
+    "ID": 2212341,
+    "OPERADORA": "ARION",
+    "ESCOLA": "E M CARLOS MAGNO FABRI MARTINS",
+    "MUNICIPIO": "Varre-Sai",
+    "US": "GO"
+  },
+  {
+    "INEP": 33019975,
+    "ID": 2212443,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE ESCOLA MUNICIPAL YOLANDA MARQUES CURTY",
+    "MUNICIPIO": "Carmo",
+    "US": "BA"
+  },
+  {
+    "INEP": 33142750,
+    "ID": 2211768,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CRECHE ESCOLA MUNICIPAL MANOELINA DE SOUZA RODRIGUES",
+    "MUNICIPIO": "Sao Francisco de Itabapoana",
+    "US": "SP"
+  },
+  {
+    "INEP": 33145580,
+    "ID": 2211669,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESCOLA CRECHE MUNICIPAL DR EDYMAR VARGAS DE OLIVEIRA",
+    "MUNICIPIO": "Natividade",
+    "US": "SP"
+  },
+  {
+    "INEP": 52048861,
+    "ID": 2212464,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESCOLA MUNICIPAL PAULO SOUSA ROCHA",
+    "MUNICIPIO": "Novo Gama",
+    "US": "SP"
+  },
+  {
+    "INEP": 25001027,
+    "ID": 2212229,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "E M E F FRANCISCA GOMES BATISTA",
+    "MUNICIPIO": "Brejo do Cruz",
+    "US": "PB"
+  },
+  {
+    "INEP": 23083662,
+    "ID": 2212034,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "MAE RITA CENTRO DE EDUCACAO INFANTIL",
+    "MUNICIPIO": "Pacatuba",
+    "US": "SP"
+  },
+  {
+    "INEP": 25307924,
+    "ID": 2211907,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CEMEB PROFESSORA MARLY BARBOSA DE ALMEIDA - TIA MARLY",
+    "MUNICIPIO": "Barra de Santana",
+    "US": "PB"
+  },
+  {
+    "INEP": 51062445,
+    "ID": 2212367,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESCOLA DE EDC INFANTIL CRIANCA FELIZ",
+    "MUNICIPIO": "Diamantino",
+    "US": "ES"
+  },
+  {
+    "INEP": 43364144,
+    "ID": 2211587,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "EMEI MATHEUS CLOSS - ESTRELINHA DO MAR",
+    "MUNICIPIO": "Osorio",
+    "US": "SP"
+  },
+  {
+    "INEP": 35007342,
+    "ID": 2211697,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "EMEB PROFESSORA SANDRA REGINA MANARA BITTAR SANTA LUCIA",
+    "MUNICIPIO": "Itapira",
+    "US": "RJ"
+  },
+  {
+    "INEP": 43161138,
+    "ID": 2211605,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "EMEI DONA LUIZA BECK",
+    "MUNICIPIO": "Tupancireta",
+    "US": "GO"
+  },
+  {
+    "INEP": 35242913,
+    "ID": 2211987,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEI PROF DIVA BASSI MUNHOZ",
+    "MUNICIPIO": "Rancharia",
+    "US": "SP"
+  },
+  {
+    "INEP": 42127629,
+    "ID": 2211608,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CEI CARMEM MATOS BORGES",
+    "MUNICIPIO": "Balneario Arroio do Silva",
+    "US": "SC"
+  },
+  {
+    "INEP": 42123810,
+    "ID": 2211814,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CEI ADRIANA APARECIDA VIANA",
+    "MUNICIPIO": "Braco do Norte",
+    "US": "SC"
+  },
+  {
+    "INEP": 15170977,
+    "ID": 2212110,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "E M E I PROF BENEDITA ROSA DE MELO",
+    "MUNICIPIO": "Tracuateua",
+    "US": "GO"
+  },
+  {
+    "INEP": 17049814,
+    "ID": 2213060,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CMEI- CENTRO MUNICIPAL DE EDUCACAO INFANTIL CRIANCA FELIZ",
+    "MUNICIPIO": "Tabocao",
+    "US": "GO"
+  },
+  {
+    "INEP": 17056640,
+    "ID": 2211863,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL RAIMUNDA REGINO DE LIMA",
+    "MUNICIPIO": "Gurupi",
+    "US": "ES"
+  },
+  {
+    "INEP": 17056713,
+    "ID": 2211761,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CMEI TEREZINHA ROSA SIQUEIRA",
+    "MUNICIPIO": "Silvanopolis",
+    "US": "GO"
+  },
+  {
+    "INEP": 21001596,
+    "ID": 2212115,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "UE CRIANCA FELIZ",
+    "MUNICIPIO": "Apicum-Acu",
+    "US": "MA"
+  },
+  {
+    "INEP": 21037264,
+    "ID": 2212220,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE MONSENHOR BRANDT",
+    "MUNICIPIO": "Arari",
+    "US": "MA"
+  },
+  {
+    "INEP": 21099669,
+    "ID": 2211991,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "JARDIM DE INFANCIA TIA ZEZUITA",
+    "MUNICIPIO": "Bom Lugar",
+    "US": "MA"
+  },
+  {
+    "INEP": 35449398,
+    "ID": 2211696,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ISABEL BIZARRO TULON CEMEI",
+    "MUNICIPIO": "Itatiba",
+    "US": "SP"
+  },
+  {
+    "INEP": 21220557,
+    "ID": 2211992,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "JI TIA BONFIM",
+    "MUNICIPIO": "Riachao",
+    "US": "SP"
+  },
+  {
+    "INEP": 21276099,
+    "ID": 2211996,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE TEREZINHA RIBEIRO DE SOUSA",
+    "MUNICIPIO": "Miranda do Norte",
+    "US": "SP"
+  },
+  {
+    "INEP": 21281491,
+    "ID": 2211869,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CEI IRMA MATHILDE",
+    "MUNICIPIO": "Timbiras",
+    "US": "GO"
+  },
+  {
+    "INEP": 29473667,
+    "ID": 2212074,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO DE ATENDIMENTO EDUCACIONAL ESPECIALZADO MULTIDISCIPLINAR I",
+    "MUNICIPIO": "Jiquirica",
+    "US": "SP"
+  },
+  {
+    "INEP": 22122524,
+    "ID": 2211769,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE MUL MAE TOINHA",
+    "MUNICIPIO": "Paulistana",
+    "US": "SP"
+  },
+  {
+    "INEP": 22140603,
+    "ID": 2211770,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL PROFESSORA LOURDINHA SIMEAO",
+    "MUNICIPIO": "Cocal",
+    "US": "BA"
+  },
+  {
+    "INEP": 22142606,
+    "ID": 2212463,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE MUNICIPAL CECY ROCHA DA CUNHA - TIA CECY",
+    "MUNICIPIO": "Corrente",
+    "US": "ES"
+  },
+  {
+    "INEP": 22145303,
+    "ID": 2211883,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESCOLA MUNICIPAL CAIQUINHO",
+    "MUNICIPIO": "Valenca do Piaui",
+    "US": "GO"
+  },
+  {
+    "INEP": 24007110,
+    "ID": 2212130,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFESSORA RAIMUNDA SOARES DE FREITAS",
+    "MUNICIPIO": "Governador Dix-Sept Rosado",
+    "US": "ES"
+  },
+  {
+    "INEP": 24008052,
+    "ID": 2212448,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "JARDIM ESCOLA MUNICIPAL TIA ALICE",
+    "MUNICIPIO": "Janduis",
+    "US": "SP"
+  },
+  {
+    "INEP": 24029068,
+    "ID": 2211774,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL SENHOR MENINO",
+    "MUNICIPIO": "Florania",
+    "US": "ES"
+  },
+  {
+    "INEP": 24071692,
+    "ID": 2212346,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE MUNDO ENCANTADO",
+    "MUNICIPIO": "Montanhas",
+    "US": "SP"
+  },
+  {
+    "INEP": 24084697,
+    "ID": 2212450,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL JARNIELE ALVES DA SILVA - CMEI",
+    "MUNICIPIO": "Cerro Cora",
+    "US": "BA"
+  },
+  {
+    "INEP": 24085715,
+    "ID": 2211889,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE PROINFANCIA MARIA DO SOCORRO DIAS",
+    "MUNICIPIO": "Sao Tome",
+    "US": "GO"
+  },
+  {
+    "INEP": 26009358,
+    "ID": 2211677,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE E ESCOLA JOSEFA M CARVALHO",
+    "MUNICIPIO": "Mirandiba",
+    "US": "SP"
+  },
+  {
+    "INEP": 26140756,
+    "ID": 2212139,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE MINERVINA JUVINA DE SOUZA",
+    "MUNICIPIO": "Cupira",
+    "US": "ES"
+  },
+  {
+    "INEP": 26148013,
+    "ID": 2211678,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO DE ENSINO INFANTIL TIA JULIA DE ALMEIDA",
+    "MUNICIPIO": "Panelas",
+    "US": "SP"
+  },
+  {
+    "INEP": 27050530,
+    "ID": 2212017,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO MUNICIPAL DE EDUCACAO INFANTIL PROFESSOR JOAO BOSCO MENEZES EVARISTO",
+    "MUNICIPIO": "Cacimbinhas",
+    "US": "PE"
+  },
+  {
+    "INEP": 43295142,
+    "ID": 2212242,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESC MUN ED INFANTIL LUZ DO SABER",
+    "MUNICIPIO": "Porto Vera Cruz",
+    "US": "SP"
+  },
+  {
+    "INEP": 17002060,
+    "ID": 2212329,
+    "OPERADORA": "ARION",
+    "ESCOLA": "ESC MUL JAIME NUNES",
+    "MUNICIPIO": "Itaguatins",
+    "US": "ES"
+  },
+  {
+    "INEP": 43176895,
+    "ID": 2211904,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "ESCOLA MUNICIPAL DE EDUCACAO INFANTIL PINGO DE GENTE",
+    "MUNICIPIO": "Tres Arroios",
+    "US": "GO"
+  },
+  {
+    "INEP": 29277299,
+    "ID": 2211687,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CENTRO DE EDUCACAO INFANTIL JOAQUIM MASCARENHAS",
+    "MUNICIPIO": "Pocoes",
+    "US": "SP"
+  },
+  {
+    "INEP": 43011799,
+    "ID": 2211915,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "EMEI MUNDO ENCANTADO II",
+    "MUNICIPIO": "Caraa",
+    "US": "BA"
+  },
+  {
+    "INEP": 29451710,
+    "ID": 2211924,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE E ESCOLA DE EDUCACAO INFANTIL JACOB ALVES CAJUEIRO",
+    "MUNICIPIO": "Mirangaba",
+    "US": "SP"
+  },
+  {
+    "INEP": 41389034,
+    "ID": 2212057,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "SANTOS C M E I DR",
+    "MUNICIPIO": "Jaguariaiva",
+    "US": "SP"
+  },
+  {
+    "INEP": 41389026,
+    "ID": 2212058,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "WALDEMAR M DE GOUVEIA C M E I",
+    "MUNICIPIO": "Jaguariaiva",
+    "US": "SP"
+  },
+  {
+    "INEP": 41157150,
+    "ID": 2212208,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "WILMA SIMON FARIA C M E I PROFA",
+    "MUNICIPIO": "Jaguariaiva",
+    "US": "SP"
+  },
+  {
+    "INEP": 33020019,
+    "ID": 2212122,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "CRECHE ESCOLA MUNICIPAL CICERO GOULART DE SOUZA",
+    "MUNICIPIO": "Carmo",
+    "US": "BA"
+  },
+  {
+    "INEP": 33098689,
+    "ID": 2212342,
+    "OPERADORA": "NAVA",
+    "ESCOLA": "PRE ESCOLAR MUNICIPAL FRANCISCO VARELLA",
+    "MUNICIPIO": "Carmo",
+    "US": "BA"
+  },
+  {
+    "INEP": 41069536,
+    "ID": 2212106,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CESAR LATTES E M EI EF",
+    "MUNICIPIO": "Tupassi",
+    "US": "GO"
+  },
+  {
+    "INEP": 42149924,
+    "ID": 2212177,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CEIM PADRE ARMANDO DE COSTA",
+    "MUNICIPIO": "Campos Novos",
+    "US": "BA"
+  },
+  {
+    "INEP": 43136885,
+    "ID": 2211688,
+    "OPERADORA": "ARION",
+    "ESCOLA": "EMEF JOAO CERNICCHIARO",
+    "MUNICIPIO": "Sao Jeronimo",
+    "US": "SP"
+  },
+  {
+    "INEP": 21127832,
+    "ID": 2212333,
+    "OPERADORA": "ARION",
+    "ESCOLA": "CENTRO EDUCACIONAL SEMENTES DO AMANHA",
+    "MUNICIPIO": "Goncalves Dias",
+    "US": "ES"
+  }
+]
