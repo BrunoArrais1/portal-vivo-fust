@@ -179,29 +179,21 @@
     line-height:1.6;
 }
 .btn-topo{
+    display:none;
     position:fixed;
     bottom:20px;
     left:20px;
-
-    display:none;
-
-    width:auto !important;
-    min-width:120px;
-
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
     background:#660099;
     color:white;
-
-    border:none;
-    border-radius:8px;
-
-    padding:12px 18px;
-
-    cursor:pointer;
+    font-size:18px;
     font-weight:bold;
-
-    z-index:1000;
+    cursor:pointer;
+    z-index:9999;
 }
-
 .btn-topo:hover{
     background:#7e1ac7;
 }
@@ -566,7 +558,6 @@ window.addEventListener("scroll", () => {
 
   <button
     id="btnTopo"
-    class="btn-topo"
     onclick="voltarTopo()">
 
     ⬆️
