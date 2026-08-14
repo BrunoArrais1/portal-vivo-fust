@@ -233,15 +233,6 @@
       <label>Escola</label>
       <input id="escola" class="readonly" readonly>
   
-      <label>ID</label>
-      <input id="idvivo" class="readonly" readonly>
-  
-      <label>Município</label>
-      <input id="municipio" class="readonly" readonly>
-  
-      <label>UF</label>
-      <input id="uf" class="readonly" readonly>
-  
   </div>
   
   <div id="modalAviso" class="modal">
@@ -350,22 +341,7 @@
       ).value =
       registro.ESCOLA || "";
     
-    document.getElementById(
-      "idvivo"
-      ).value =
-      registro.ID || "";
-  
-      document.getElementById(
-          "municipio"
-      ).value =
-          registro.MUNICIPIO || "";
-  
-      document.getElementById(
-          "uf"
-      ).value =
-          registro.UF || "";
-    
-    document.getElementById(
+document.getElementById(
       "inepResultado"
   ).value =
       registro.INEP || "";
