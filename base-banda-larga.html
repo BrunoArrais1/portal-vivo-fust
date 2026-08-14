@@ -174,7 +174,10 @@
   .modal-ok:hover{
       background:#7e1ac7;
   }
-  
+  #contatosOperadora{
+    white-space:normal;
+    line-height:1.6;
+}
   </style>
   </head>
   
@@ -235,6 +238,12 @@
       
     <label>ID</label>
       <input id="idvivo" class="readonly" readonly>
+
+    <label>Contatos e Escalonamento</label>
+
+<div id="contatosOperadora" class="readonly"
+     style="padding:15px; min-height:150px;">
+</div>
   
   </div>
   
@@ -272,6 +281,7 @@
   }
   
   let baseBandaLarga = [];
+  let baseContatos = [];
   
   document.addEventListener(
       "DOMContentLoaded",
@@ -286,6 +296,14 @@
   
               baseBandaLarga =
                   await resposta.json();
+            
+            const respostaContatos =
+          await fetch(
+        "./contatosBL.json"
+    );
+
+baseContatos =
+    await respostaContatos.json();
   
           }catch(erro){
   
@@ -354,8 +372,41 @@ document.getElementById(
   ).value =
       registro.INEP || "";
   
-      }
-  
+  const contatos =
+
+    baseContatos.filter(
+
+        item =>
+
+        item.Operadora ===
+        registro.OPERADORA
+
+    );
+
+const htmlContatos =
+
+    contatos.map(c =>
+
+        `<div style="margin-bottom:18px;">
+            <b>Nível:</b> ${c.Nivel}<br>
+            <b>Área:</b> ${c.Area}<br>
+            <b>Nome:</b> ${c.Nome}<br>
+            <b>Contato:</b> ${c.Contato}<br>
+            <b>E-mail:</b> ${c["e-mail"]}<br>
+            <b>Escalonamento:</b> ${c.Escalonamento}
+        </div>`
+
+    ).join("<hr>");
+
+document.getElementById(
+    "contatosOperadora"
+).innerHTML =
+
+    htmlContatos ||
+
+    "Nenhum contato localizado para esta operadora.";
+}
+    
   function mostrarAviso(texto){
   
       document.getElementById(
