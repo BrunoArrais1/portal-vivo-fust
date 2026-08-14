@@ -14210,11 +14210,6 @@
     "E-MAIL": "elaine_medeiros3@hotmail.com"
   },
   {
-    "MUNICIPIO": "Sao Paulo",
-    "SECRETARIO": "FERNANDO PADULA NOVAES",
-    "E-MAIL": "padula@sme.prefeitura.sp.gov.br"
-  },
-  {
     "MUNICIPIO": "Sao Pedro",
     "SECRETARIO": "SAMANTA ALVES ALMOZARA BONTORIM",
     "E-MAIL": "samanta.bontorim@saopedro.sp.gov.br"
@@ -14688,6 +14683,11 @@
     "MUNICIPIO": "Xambioa",
     "SECRETARIO": "MARCOS VINICIUS VIEIRA DA SILVA",
     "E-MAIL": "vinicius.bits1994@gmail.com"
+  },
+  {
+    "MUNICIPIO": "Sao Paulo",
+    "SECRETARIO": "SME/COTIC",
+    "E-MAIL": "smecotic@sme.prefeitura.sp.gov.br"
   },
   {
   "MUNICIPIO": "Bahia",
