@@ -232,6 +232,9 @@
   
       <label>Escola</label>
       <input id="escola" class="readonly" readonly>
+      
+    <label>ID</label>
+      <input id="idvivo" class="readonly" readonly>
   
   </div>
   
@@ -340,6 +343,11 @@
       "escola"
       ).value =
       registro.ESCOLA || "";
+
+    document.getElementById(
+      "idvivo"
+      ).value =
+      registro.ID || "";
     
 document.getElementById(
       "inepResultado"
