@@ -1,8 +1,6 @@
 [
+    "⛔ <b>CHAMADOS SIMETBOX</b>: Antes de acionar o Field, validar se o equipamento está com o <b>IP 172.16.0.5</b>, desativar e ativar o NAT, verificar se a <b>Porta 3 está conectada</b> e se equipamento está na versão <b>2.3.6</b>",
+    "⛔ <b>Diversos Simetbox TP-Link foram configurados incorretamente</b>. Quando identificado, sinalizar a informação no chamado e no acionamento da parceira",
     "⚠️ Antes de enviar e-mail de acionamento para as Parceiras, lembre-se de alterar para a caixa do NOC FUST",
     "⚠️ Sempre que atender um diretor ou responsável de uma escola, anote o nome e contato e encaminhe as informações para o Bruno atualizar a base",
-    "🟡 Não esqueçam de preencher ou atualizar o Demisto dos INC",
-    "🟡 Abram Task para todos os acionamentos das Parceiras",
-    "🟡 Utilizar o Carimbo para encerrar todas as Tasks das Parceiras",
-    "🟡 Utilizar o Carimbo também para atualizar a Descrição do INC"
 ]
