@@ -1,0 +1,482 @@
+  <!DOCTYPE html>
+  <html lang="pt-BR">
+  
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Base Banda Larga</title>
+  
+  <style>
+  
+  body{
+      font-family:Arial,sans-serif;
+      background:#f5f5f5;
+      margin:0;
+  }
+  
+  body.dark{
+      background:#1e1e1e;
+      color:white;
+  }
+  
+  .topo{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 20px;
+  }
+  
+  .btn-voltar{
+      background:#660099;
+      color:white;
+      text-decoration:none;
+      padding:12px 18px;
+      border-radius:8px;
+      font-weight:bold;
+      min-width:220px;
+      text-align:center;
+  }
+  
+  .btn-voltar:hover{
+      background:#7e1ac7;
+  }
+  
+  .btn-tema{
+      background:#660099;
+      color:white;
+      border:none;
+      border-radius:8px;
+      width:170px;
+      height:48px;
+      cursor:pointer;
+      font-weight:bold;
+  }
+  
+  .btn-tema:hover{
+      background:#7e1ac7;
+  }
+  
+  .header{
+      background:#660099;
+      color:white;
+      padding:15px;
+      text-align:center;
+      font-size:20px;
+      font-weight:bold;
+  }
+  
+  .container{
+      max-width:1200px;
+      margin:40px auto;
+      background:white;
+      padding:40px;
+      border-radius:20px;
+      box-shadow:0 3px 12px rgba(0,0,0,.18);
+  }
+  
+  body.dark .container{
+      background:#2b2b2b;
+  }
+  
+  label{
+      display:block;
+      margin-top:18px;
+      margin-bottom:5px;
+      font-weight:bold;
+  }
+  
+  input{
+      width:100%;
+      max-width:900px;
+      padding:12px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      box-sizing:border-box;
+  }
+  
+  body.dark input{
+      background:#3a3a3a;
+      color:white;
+      border:1px solid #555;
+  }
+  
+  .readonly{
+      background:#f0f0f0;
+  }
+  
+  body.dark .readonly{
+      background:#444;
+  }
+  
+  .linha-inep{
+      display:flex;
+      gap:10px;
+      align-items:center;
+  }
+  
+  #inep{
+      width:250px;
+  }
+  
+  .btn-buscar{
+      width:180px;
+      background:#660099;
+      color:white;
+      border:none;
+      border-radius:8px;
+      padding:12px;
+      cursor:pointer;
+      font-weight:bold;
+  }
+  
+  .btn-buscar:hover{
+      background:#7e1ac7;
+  }
+  
+  .modal{
+      display:none;
+      position:fixed;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background:rgba(0,0,0,.5);
+      justify-content:center;
+      align-items:center;
+      z-index:9999;
+  }
+  
+  .modal-conteudo{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      width:400px;
+      max-width:90%;
+      text-align:center;
+  }
+  
+  body.dark .modal-conteudo{
+      background:#2b2b2b;
+      color:white;
+  }
+  
+  .modal-ok{
+      background:#660099;
+      color:white;
+      border:none;
+      border-radius:8px;
+      padding:12px 18px;
+      min-width:120px;
+      cursor:pointer;
+  }
+  
+  .modal-ok:hover{
+      background:#7e1ac7;
+  }
+  
+  </style>
+  </head>
+  
+  <body>
+  
+  <div class="topo">
+  
+      <a href="#"
+     class="btn-voltar"
+     onclick="voltarPortal(); return false;">
+          🏠 Voltar ao Portal
+      </a>
+  
+      <button
+          id="temaBtn"
+          class="btn-tema"
+          onclick="alternarTema()">
+  
+          🌙 Modo Escuro
+  
+      </button>
+  
+  </div>
+  
+  <div class="header">
+  
+      Base Banda Larga
+  
+  </div>
+    
+  <div class="container">
+
+  <label>INEP</label>
+  
+  <div class="linha-inep">
+  
+      <input id="inep">
+  
+      <button
+          class="btn-buscar"
+          onclick="buscarINEP()">
+  
+          Buscar
+  
+      </button>
+  
+  </div>
+  
+  <label>INEP Consultado</label>
+  
+  <input id="inepResultado" class="readonly" readonly>
+    
+    <label>Operadora</label>
+      <input id="operadora" class="readonly" readonly>
+  
+      <label>Escola</label>
+      <input id="escola" class="readonly" readonly>
+  
+      <label>ID</label>
+      <input id="idvivo" class="readonly" readonly>
+  
+      <label>Município</label>
+      <input id="municipio" class="readonly" readonly>
+  
+      <label>UF</label>
+      <input id="uf" class="readonly" readonly>
+  
+  </div>
+  
+  <div id="modalAviso" class="modal">
+  
+      <div class="modal-conteudo">
+  
+          <h3>Portal FUST</h3>
+  
+          <p id="textoModal"></p>
+  
+          <button
+              class="modal-ok"
+              onclick="fecharModal()">
+  
+              OK
+  
+          </button>
+  
+      </div>
+  
+  </div>
+  
+  <script>
+  
+  if(
+      !sessionStorage.getItem(
+          "usuarioLogado"
+      )
+  ){
+  
+      window.location.href =
+          "login.html";
+  
+  }
+  
+  let baseBandaLarga = [];
+  
+  document.addEventListener(
+      "DOMContentLoaded",
+      async () => {
+  
+          try{
+  
+              const resposta =
+                  await fetch(
+                      "./banda-larga.json"
+                  );
+  
+              baseBandaLarga =
+                  await resposta.json();
+  
+          }catch(erro){
+  
+              console.error(erro);
+  
+              mostrarAviso(
+                  "Erro ao carregar a base Banda Larga."
+              );
+  
+          }
+  
+      }
+  );
+  
+  function buscarINEP(){
+  
+      const inep =
+          document.getElementById(
+              "inep"
+          ).value.trim();
+  
+      if(!inep){
+  
+          mostrarAviso(
+              "Favor informar o INEP."
+          );
+  
+          return;
+  
+      }
+  
+      const registro =
+          baseBandaLarga.find(
+              x =>
+              String(x.INEP) ===
+              String(inep)
+          );
+  
+      if(!registro){
+  
+          mostrarAviso(
+              "INEP não localizado."
+          );
+  
+          return;
+  
+      }
+  
+      document.getElementById(
+          "operadora"
+      ).value =
+          registro.OPERADORA || "";
+  
+    document.getElementById(
+      "escola"
+      ).value =
+      registro.ESCOLA || "";
+    
+    document.getElementById(
+      "idvivo"
+      ).value =
+      registro.ID || "";
+  
+      document.getElementById(
+          "municipio"
+      ).value =
+          registro.MUNICIPIO || "";
+  
+      document.getElementById(
+          "uf"
+      ).value =
+          registro.UF || "";
+    
+    document.getElementById(
+      "inepResultado"
+  ).value =
+      registro.INEP || "";
+  
+      }
+  
+  function mostrarAviso(texto){
+  
+      document.getElementById(
+          "textoModal"
+      ).innerHTML =
+          texto;
+  
+      document.getElementById(
+          "modalAviso"
+      ).style.display =
+          "flex";
+  
+  }
+  
+  function fecharModal(){
+  
+      document.getElementById(
+          "modalAviso"
+      ).style.display =
+          "none";
+  
+  }
+  
+  function voltarPortal(){
+  
+      window.location.replace(
+          "index.html?v=" +
+          Date.now()
+      );
+  
+  }
+  
+  function alternarTema(){
+  
+      document.body.classList.toggle(
+          "dark"
+      );
+  
+      const escuro =
+          document.body.classList.contains(
+              "dark"
+          );
+  
+      localStorage.setItem(
+          "tema",
+          escuro ? "dark" : "light"
+      );
+  
+      document.getElementById(
+          "temaBtn"
+      ).innerHTML =
+  
+          escuro
+          ? "☀️ Modo Claro"
+          : "🌙 Modo Escuro";
+  
+  }
+  
+  window.addEventListener(
+      "load",
+      () => {
+  
+          const tema =
+              localStorage.getItem(
+                  "tema"
+              );
+  
+          if(tema === "dark"){
+  
+              document.body.classList.add(
+                  "dark"
+              );
+  
+              document.getElementById(
+                  "temaBtn"
+              ).innerHTML =
+                  "☀️ Modo Claro";
+  
+          }
+  
+          document.getElementById(
+              "inep"
+          ).focus();
+  
+          document.getElementById(
+              "inep"
+          ).addEventListener(
+              "keydown",
+              function(event){
+  
+                  if(event.key === "Enter"){
+  
+                      event.preventDefault();
+  
+                      buscarINEP();
+  
+                  }
+  
+              }
+          );
+  
+      }
+  );
+  
+  </script>
+  
+  </body>
+  </html>
