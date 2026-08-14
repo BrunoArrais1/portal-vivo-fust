@@ -1,0 +1,74 @@
+[
+  {
+    "Operadora": "ARION",
+    "Nivel": 1,
+    "Area": "Network Operations Center",
+    "Nome": "NOC",
+    "Contato": "0800 878 8230",
+    "e-mail": "atendimento@grupoarion.com.br",
+    "Escalonamento": "0 a 6 horas (24 horas x 7 dias por semana)"
+  },
+  {
+    "Operadora": "ARION",
+    "Nivel": 2,
+    "Area": "Supervisoes de Operacoes (NOC)",
+    "Nome": "Thiago Struciatti",
+    "Contato": "(19) 97409-4935",
+    "e-mail": "thiago.struciatti@grupoarion.com.br",
+    "Escalonamento": "6 a 10 horas (das 08h as 18h)"
+  },
+  {
+    "Operadora": "ARION",
+    "Nivel": 2,
+    "Area": "Supervisoes de Operacoes (Campo)",
+    "Nome": "Alessandro Silva",
+    "Contato": "(11) 96852-7135",
+    "e-mail": "alessandro.silva@grupoarion.com.br",
+    "Escalonamento": "6 a 10 horas (das 08h as 18h)"
+  },
+  {
+    "Operadora": "ARION",
+    "Nivel": 3,
+    "Area": "Gerente de Operacoes",
+    "Nome": "Herick Lara",
+    "Contato": "(31) 9 7569-0039",
+    "e-mail": "herick.lara@grupoarion.com.br",
+    "Escalonamento": "acima de 10 horas (24 horas x 7 dias por semana)"
+  },
+  {
+    "Operadora": "ARION",
+    "Nivel": 4,
+    "Area": "Diretor de Operacoes",
+    "Nome": "Vinicius Greme",
+    "Contato": "(44) 99916-6928",
+    "e-mail": "vinicius.greme@grupoarion.com.br",
+    "Escalonamento": "acima de 12 horas (24 horas x 7 dias por semana)"
+  },
+  {
+    "Operadora": "NAVA",
+    "Nivel": 1,
+    "Area": "Equipe Diagnostico: Abertura de Reparo e Posicionamento",
+    "Nome": "Equipe Tecnica (N1 e N2)",
+    "Contato": "(11) 5039-1234, opcao 1",
+    "e-mail": "conectividade@nava.com.br",
+    "Escalonamento": "Durante o reparo (24 horas x 7 dias por semana)"
+  },
+  {
+    "Operadora": "NAVA",
+    "Nivel": 2,
+    "Area": "Gerente de Operacoes",
+    "Nome": "Fabiano Uoya",
+    "Contato": "(11) 98050-0231",
+    "e-mail": "fabiano.uoya@nava.com.br",
+    "Escalonamento": "8 horas apos o vencimento do reparo"
+  },
+  {
+    "Operadora": "NAVA",
+    "Nivel": 3,
+    "Area": "Diretor de Operacoes",
+    "Nome": "Roberto Couto",
+    "Contato": "(11) 91195-8536",
+    "e-mail": "roberto.couto@nava.com.br",
+    "Escalonamento": "12 horas apos o vencimento do reparo"
+  }
+]
