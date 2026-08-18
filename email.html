@@ -253,11 +253,22 @@ button:hover{
     max-width:180px;
     flex:none;
 }
-.btn-buscar{
+.btn-buscar,
+.btn-limpar{
     width:150px;
     height:40px;
     margin:0;
     flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:0;
+}
+.btn-buscar{
+    background:#660099;
+}
+.btn-limpar{
+    background:#666;
 }
 .btn-tema{
     background:#660099;
@@ -370,21 +381,6 @@ body.dark .modal-conteudo{
     display:flex;
     gap:10px;
     align-items:center;
-}
-.btn-limpar{
-    width:150px;
-    height:40px;
-    margin:0;
-    flex-shrink:0;
-    background:#666;
-    color:white;
-    border:none;
-    border-radius:6px;
-    cursor:pointer;
-    font-weight:bold;
-    display:flex;
-    align-items:center;
-    gap:14px;
 }
 .btn-limpar:hover{
     background:#555;
