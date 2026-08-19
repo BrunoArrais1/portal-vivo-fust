@@ -328,25 +328,30 @@ body.dark .modal-conteudo{
 <div id="aba2" class="container aba">
 
 <label>Operadora</label>
-<select id="operadora2">
-<option>VIVO</option>
-<option>PARCEIRA</option>
+
+<select id="operadora2"
+        onchange="validarOperadora()">
+
+    <option>VIVO</option>
+    <option>PARCEIRA</option>
+
 </select>
 
 <div id="campoParceira">
 
     <label>Parceira</label>
 
-<select id="operadora2"
-        onchange="validarOperadora()">
+    <select id="parceira2">
+
         <option>DELFIA</option>
         <option>INELCOM</option>
         <option>MAMINFO</option>
         <option>SPREAD</option>
+
     </select>
 
 </div>
-
+    
 <label>Pendência</label>
 <select id="pendencia2">
 <option>AP</option>
@@ -476,9 +481,21 @@ function copiar(){
 }
 /* CARIMBO 2 */
 function gerarCarimbo2(){
-  const operadora = document.getElementById('operadora2').value;
-  const parceira = document.getElementById('parceira2').value;
-  const pendencia = document.getElementById('pendencia2').value;
+const operadora =
+    document.getElementById(
+        "operadora2"
+    ).value;
+
+const parceira =
+
+    operadora === "VIVO"
+
+    ? "N/A"
+
+    : document.getElementById(
+        "parceira2"
+      ).value;
+    const pendencia = document.getElementById('pendencia2').value;
   const motivo = document.getElementById('motivo2').value;
   const data = document.getElementById('data2').value || "SEM PREVISÃO";
 
@@ -490,7 +507,35 @@ PREVISÃO: ${data}`;
 
   document.getElementById('resultado2').value = texto;
 }
+function validarOperadora(){
 
+    const operadora =
+        document.getElementById(
+            "operadora2"
+        ).value;
+
+    const campoParceira =
+        document.getElementById(
+            "campoParceira"
+        );
+
+    if(operadora === "VIVO"){
+
+        campoParceira.style.display =
+            "none";
+
+        document.getElementById(
+            "parceira2"
+        ).selectedIndex = 0;
+
+    }else{
+
+        campoParceira.style.display =
+            "block";
+
+    }
+
+}
 function copiarCarimbo2(){
 
     const texto =
