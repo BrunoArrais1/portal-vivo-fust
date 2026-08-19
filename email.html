@@ -516,10 +516,6 @@ body.dark .modal-conteudo{
 
     <textarea id="falha"></textarea>
 
-<div class="obs-resumo">
-    (Copiar esse texto e colar no campo Resumo do portal DELFIA)
-</div>
-
 <div class="titulo-copia">
 
     <label style="margin:0;">
@@ -534,10 +530,14 @@ body.dark .modal-conteudo{
         📋 Copiar
 
     </button>
-<textarea id="resumoManutencao" readonly></textarea>
 
 </div>
-<label>Texto Portal</label>
+
+<div class="obs-resumo">
+    (Copiar esse texto e colar no campo Resumo do portal DELFIA)
+</div>
+
+<textarea id="resumoManutencao" readonly></textarea>
 
 <div class="titulo-copia">
 
@@ -557,7 +557,7 @@ body.dark .modal-conteudo{
 </div>
 
 <textarea id="textoPortal" readonly></textarea>
-<br>
+    <br>
 
 <div class="acoes">
 
@@ -909,20 +909,6 @@ mostrarAviso(
     }
 
 }
-const falha =
-    document.getElementById(
-        "falha"
-    ).value.trim();
-
-if(!falha){
-
-    mostrarAviso(
-        "Preencha a descrição da falha."
-    );
-
-    return;
-
-}
 function gerarTexto(){
 
     if(!validarChamado()){
@@ -1169,34 +1155,6 @@ function copiarResumo(){
     if(!texto){
 
         mostrarAviso(
-            "Gere o texto primeiro."
-        );
-
-        return;
-
-    }
-
-    navigator.clipboard
-        .writeText(texto)
-        .then(() => {
-
-            mostrarAviso(
-                "Resumo copiado."
-            );
-
-        });
-
-}
-function copiarResumo(){
-
-    const texto =
-        document.getElementById(
-            "resumoManutencao"
-        ).value;
-
-    if(!texto){
-
-        mostrarAviso(
             "Resumo vazio."
         );
 
@@ -1214,32 +1172,6 @@ function copiarResumo(){
 
 }
 
-function copiarPortal(){
-
-    const texto =
-        document.getElementById(
-            "textoPortal"
-        ).value;
-
-    if(!texto){
-
-        mostrarAviso(
-            "Texto Portal vazio."
-        );
-
-        return;
-
-    }
-
-    navigator.clipboard.writeText(
-        texto
-    );
-
-    mostrarAviso(
-        "Texto Portal copiado."
-    );
-
-}
 function copiarPortal(){
 
     const texto =
