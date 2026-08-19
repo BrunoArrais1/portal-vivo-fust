@@ -781,8 +781,20 @@ mostrarAviso(
     const chamado =
         document.getElementById("chamado").value;
 
-    const falha =
-        document.getElementById("falha").value;
+const falha =
+    document.getElementById(
+        "falha"
+    ).value.trim();
+
+if(!falha){
+
+    mostrarAviso(
+        "Preencha a descrição da falha."
+    );
+
+    return;
+
+}
 
     const destinatarios = {
 
@@ -929,8 +941,20 @@ function gerarTexto(){
     const chamado =
         document.getElementById("chamado").value;
 
-    const falha =
-        document.getElementById("falha").value;
+const falha =
+    document.getElementById(
+        "falha"
+    ).value.trim();
+
+if(!falha){
+
+    mostrarAviso(
+        "Preencha a descrição da falha."
+    );
+
+    return;
+
+}
 
 const assunto =
 `MANUTENÇÃO - ${parceiro} - INEP ${inep} - ${escola} - ID ${id} - CHAMADO ${chamado}`;
