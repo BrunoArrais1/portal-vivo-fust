@@ -63,7 +63,31 @@ body.dark .btn-cancelar{
     align-items:center;
     margin-top:30px;
 }
+.titulo-copia{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    margin-top:15px;
+}
 
+.btn-copiar-mini{
+    background:#660099;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:4px 10px;
+    font-size:12px;
+    font-weight:bold;
+    cursor:pointer;
+    width:auto;
+    min-width:auto;
+    margin:0;
+}
+
+.btn-copiar-mini:hover{
+    background:#7e1ac7;
+}
 .area-final textarea{
     width:100%;
     max-width:100%;
@@ -492,34 +516,48 @@ body.dark .modal-conteudo{
 
     <textarea id="falha"></textarea>
 
-<label>Resumo Manutenção</label>
-
 <div class="obs-resumo">
     (Copiar esse texto e colar no campo Resumo do portal DELFIA)
 </div>
 
+<div class="titulo-copia">
+
+    <label style="margin:0;">
+        Resumo Manutenção
+    </label>
+
+    <button
+        type="button"
+        class="btn-copiar-mini"
+        onclick="copiarResumo()">
+
+        📋 Copiar
+
+    </button>
 <textarea id="resumoManutencao" readonly></textarea>
 
-<button
-    type="button"
-    class="btn-gerar"
-    onclick="copiarResumo()">
-
-    📋 Copiar Resumo
-
-</button>
+</div>
 <label>Texto Portal</label>
+
+<div class="titulo-copia">
+
+    <label style="margin:0;">
+        Texto Portal
+    </label>
+
+    <button
+        type="button"
+        class="btn-copiar-mini"
+        onclick="copiarPortal()">
+
+        📋 Copiar
+
+    </button>
+
+</div>
+
 <textarea id="textoPortal" readonly></textarea>
-
-<button
-    type="button"
-    class="btn-gerar"
-    onclick="copiarPortal()">
-
-    📋 Copiar Portal
-
-</button>
-    <br>
+<br>
 
 <div class="acoes">
 
@@ -1149,7 +1187,59 @@ function copiarResumo(){
         });
 
 }
+function copiarResumo(){
 
+    const texto =
+        document.getElementById(
+            "resumoManutencao"
+        ).value;
+
+    if(!texto){
+
+        mostrarAviso(
+            "Resumo vazio."
+        );
+
+        return;
+
+    }
+
+    navigator.clipboard.writeText(
+        texto
+    );
+
+    mostrarAviso(
+        "Resumo copiado."
+    );
+
+}
+
+function copiarPortal(){
+
+    const texto =
+        document.getElementById(
+            "textoPortal"
+        ).value;
+
+    if(!texto){
+
+        mostrarAviso(
+            "Texto Portal vazio."
+        );
+
+        return;
+
+    }
+
+    navigator.clipboard.writeText(
+        texto
+    );
+
+    mostrarAviso(
+        "Texto Portal copiado."
+    );
+
+}
 function copiarPortal(){
 
     const texto =
