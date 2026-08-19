@@ -199,7 +199,7 @@ button:hover{
 
 .falhas{
     display:grid;
-    grid-template-columns:repeat(6, 150px);
+    grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
     gap:10px;
     justify-content:center;
     margin:auto;
@@ -500,8 +500,25 @@ body.dark .modal-conteudo{
 
 <textarea id="resumoManutencao" readonly></textarea>
 
+<button
+    type="button"
+    class="btn-gerar"
+    onclick="copiarResumo()">
+
+    📋 Copiar Resumo
+
+</button>
 <label>Texto Portal</label>
 <textarea id="textoPortal" readonly></textarea>
+
+<button
+    type="button"
+    class="btn-gerar"
+    onclick="copiarPortal()">
+
+    📋 Copiar Portal
+
+</button>
     <br>
 
 <div class="acoes">
@@ -558,7 +575,7 @@ body.dark .modal-conteudo{
 <script>
 
 if(
-    !localStorage.getItem(
+    !sessionStorage.getItem(
         "usuarioLogado"
     )
 ){
@@ -567,7 +584,6 @@ if(
         "login.html";
 
 }
-
 async function buscarINEP(){
 
     const inep = document
@@ -855,6 +871,20 @@ mostrarAviso(
     }
 
 }
+const falha =
+    document.getElementById(
+        "falha"
+    ).value.trim();
+
+if(!falha){
+
+    mostrarAviso(
+        "Preencha a descrição da falha."
+    );
+
+    return;
+
+}
 function gerarTexto(){
 
     if(!validarChamado()){
@@ -1089,6 +1119,63 @@ function fecharConfirmacao(resultado){
         );
 
     }
+
+}
+function copiarResumo(){
+
+    const texto =
+        document.getElementById(
+            "resumoManutencao"
+        ).value;
+
+    if(!texto){
+
+        mostrarAviso(
+            "Gere o texto primeiro."
+        );
+
+        return;
+
+    }
+
+    navigator.clipboard
+        .writeText(texto)
+        .then(() => {
+
+            mostrarAviso(
+                "Resumo copiado."
+            );
+
+        });
+
+}
+
+function copiarPortal(){
+
+    const texto =
+        document.getElementById(
+            "textoPortal"
+        ).value;
+
+    if(!texto){
+
+        mostrarAviso(
+            "Gere o texto primeiro."
+        );
+
+        return;
+
+    }
+
+    navigator.clipboard
+        .writeText(texto)
+        .then(() => {
+
+            mostrarAviso(
+                "Texto Portal copiado."
+            );
+
+        });
 
 }
 </script>
