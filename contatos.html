@@ -323,7 +323,7 @@ body.dark .aviso-base{
 </div>
 <div class="aviso-base">
 
-    ⚠️ As informações apresentadas podem estar incompletas ou indisponíveis em alguns casos, pois a base foi construída ao longo do tempo e não possui uma fonte única e definitiva.
+    ⚠️ As informações apresentadas podem estar incompletas ou indisponíveis em alguns casos. A base foi construída ao longo do tempo e não possui uma fonte única e definitiva. Caso identifique alguma divergência, favor informar para atualização da base.
 
 </div>
 <div class="container">
@@ -410,7 +410,7 @@ body.dark .aviso-base{
 <script>
 
 if(
-    !localStorage.getItem(
+    !sessionStorage.getItem(
         "usuarioLogado"
     )
 ){
@@ -419,7 +419,6 @@ if(
         "login.html";
 
 }
-
 let baseMunicipio = [];
 let baseINEP = [];
 
