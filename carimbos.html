@@ -393,31 +393,6 @@ if(
         "login.html";
 
 }
-function validarOperadora(){
-
-    const operadora =
-        document.getElementById(
-            "operadora2"
-        ).value;
-
-    const campoParceira =
-        document.getElementById(
-            "campoParceira"
-        );
-
-    if(operadora === "VIVO"){
-
-        campoParceira.style.display =
-            "none";
-
-    }else{
-
-        campoParceira.style.display =
-            "block";
-
-    }
-
-}
 function trocarAba(id, el) {
 
   document.getElementById('aba1').classList.remove('ativa');
@@ -499,12 +474,20 @@ const parceira =
   const motivo = document.getElementById('motivo2').value;
   const data = document.getElementById('data2').value || "SEM PREVISÃO";
 
-  const texto = `OPERADORA: ${operadora}
+const texto =
+
+operadora === "VIVO"
+
+? `OPERADORA: ${operadora}
+PENDÊNCIA: ${pendencia}
+MOTIVO: ${motivo}
+PREVISÃO: ${data}`
+
+: `OPERADORA: ${operadora}
 PARCEIRA: ${parceira}
 PENDÊNCIA: ${pendencia}
 MOTIVO: ${motivo}
 PREVISÃO: ${data}`;
-
   document.getElementById('resultado2').value = texto;
 }
 function validarOperadora(){
