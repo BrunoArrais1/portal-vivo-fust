@@ -333,14 +333,19 @@ body.dark .modal-conteudo{
 <option>PARCEIRA</option>
 </select>
 
-<label>Parceira</label>
-<select id="parceira2">
-<option>DELFIA</option>
-<option>INELCOM</option>
-<option>MAMINFO</option>
-<option>SPREAD</option>
-<option>      </option>
-</select>
+<div id="campoParceira">
+
+    <label>Parceira</label>
+
+<select id="operadora2"
+        onchange="validarOperadora()">
+        <option>DELFIA</option>
+        <option>INELCOM</option>
+        <option>MAMINFO</option>
+        <option>SPREAD</option>
+    </select>
+
+</div>
 
 <label>Pendência</label>
 <select id="pendencia2">
@@ -374,7 +379,7 @@ body.dark .modal-conteudo{
 <script>
 
 if(
-    !localStorage.getItem(
+    !sessionStorage.getItem(
         "usuarioLogado"
     )
 ){
@@ -383,7 +388,31 @@ if(
         "login.html";
 
 }
+function validarOperadora(){
 
+    const operadora =
+        document.getElementById(
+            "operadora2"
+        ).value;
+
+    const campoParceira =
+        document.getElementById(
+            "campoParceira"
+        );
+
+    if(operadora === "VIVO"){
+
+        campoParceira.style.display =
+            "none";
+
+    }else{
+
+        campoParceira.style.display =
+            "block";
+
+    }
+
+}
 function trocarAba(id, el) {
 
   document.getElementById('aba1').classList.remove('ativa');
@@ -509,6 +538,8 @@ function alternarTema(){
 
 window.addEventListener("load", () => {
 
+    validarOperadora();
+    
     const tema =
         localStorage.getItem("tema");
 
