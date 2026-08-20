@@ -149,7 +149,15 @@ async function login(){
     const senha =
         document.getElementById("senha")
         .value;
+    if(!usuario || !senha){
 
+    alert(
+        "Informe usuário e senha."
+    );
+
+    return;
+
+}
     const senhaLocal =
         localStorage.getItem(
             "senha_" + usuario
