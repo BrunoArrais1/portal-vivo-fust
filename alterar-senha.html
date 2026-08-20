@@ -114,8 +114,20 @@ async function alterarSenha(){
     const usuario =
         sessionStorage.getItem(
     "usuarioLogado"
-        )
+        );
+    
+    if(!usuario){
 
+    alert(
+        "Sessão expirada."
+    );
+
+    window.location.href =
+        "login.html";
+
+    return;
+
+}
     const senhaAtual =
         document.getElementById(
             "senhaAtual"
@@ -191,4 +203,3 @@ async function alterarSenha(){
 </body>
 </html>
 
-</script>
