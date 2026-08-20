@@ -84,7 +84,7 @@ button:hover{
 async function salvarSenha(){
     
     const usuario =
-        localStorage.getItem(
+        sessionStorage.getItem(
             "usuarioTrocaSenha"
         );
 
@@ -124,12 +124,12 @@ localStorage.setItem(
     hashSenha
 );
 
-    localStorage.setItem(
+    sessionStorage.setItem(
         "usuarioLogado",
         usuario
     );
 
-    localStorage.removeItem(
+    sessionStorage.removeItem(
         "usuarioTrocaSenha"
     );
 
