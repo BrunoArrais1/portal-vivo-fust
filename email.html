@@ -690,9 +690,20 @@ if(
 
         document.getElementById("idvivo").value =
             registro.ID_VIVO;
+if(
+    registro.PARCEIRA &&
+    (
+        registro.PARCEIRA.trim().toUpperCase() === "ARION" ||
+        registro.PARCEIRA.trim().toUpperCase() === "NAVA"
+    )
+){
 
-    }
+    mostrarAviso(
+        "⚠️ ATENÇÃO:<br><br>Trata-se de Link Banda Larga."
+    );
 
+}
+}
     catch(erro){
 
         console.error(erro);
@@ -809,6 +820,12 @@ if(!falha){
 
         "MAMINFO":
             "atendimento@maminfo.com.br",
+        
+        "ARION":
+            "atendimento@grupoarion.com.br",
+        
+        "NAVA":
+            "conectividade@nava.com.br",
 
     };
 
