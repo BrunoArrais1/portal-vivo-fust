@@ -1,3 +1,3 @@
-const VERSAO_PORTAL = "3.3.0";
+const VERSAO_PORTAL = "3.3.5";
 
-const DATA_ATUALIZACAO = "14/08/2026";
+const DATA_ATUALIZACAO = "21/08/2026";
