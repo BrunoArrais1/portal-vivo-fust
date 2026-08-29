@@ -417,6 +417,17 @@ body.dark .modal-conteudo{
     align-items:center;
     gap:10px;
 }
+.linha-campos{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.campo-curto{
+    width:180px !important;
+    max-width:180px !important;
+}
 </style>
 
 </head>
@@ -469,17 +480,37 @@ body.dark .modal-conteudo{
 
 </div>
 
-<label>Parceira</label>
-<input id="parceira" class="readonly" readonly>
+<label>Parceira / Link</label>
+
+<div class="linha-campos">
+
+    <input
+        id="parceira"
+        class="readonly campo-curto"
+        readonly>
+
+    <input
+        id="link"
+        class="readonly campo-curto"
+        readonly>
+
+</div>
 <label>Escola</label>
-<input id="escola" class="readonly" readonly>
+<input
+    id="escola"
+    class="readonly campo-curto"
+    readonly>
 
 <label>ID Vivo</label>
-<input id="idvivo" class="readonly" readonly>
+<input
+    id="idvivo"
+    class="readonly campo-curto"
+    readonly>
 
 <label>Chamado Vivo <span style="color:red">*</span></label>
-<input id="chamado">
-
+<input
+    id="chamado"
+    class="campo-curto">
 <label>Falhas Comuns</label>
 
 <div class="falhas">
@@ -665,6 +696,8 @@ mostrarAviso(
 
         document.getElementById("parceira").value =
             registro.PARCEIRA;
+        document.getElementById("link").value =
+            registro.LINK || "";
         
 const campoParceira =
     document.getElementById("parceira");
@@ -1084,6 +1117,7 @@ function limparFormulario(){
 
             document.getElementById("inep").value = "";
             document.getElementById("parceira").value = "";
+            document.getElementById("link").value = "";
             document.getElementById("escola").value = "";
             document.getElementById("idvivo").value = "";
             document.getElementById("chamado").value = "";
