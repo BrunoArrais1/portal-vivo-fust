@@ -335,6 +335,8 @@ body.dark .modal-conteudo{
         onchange="validarOperadora()">
 
     <option>VIVO</option>
+    <option>ARION</option>
+    <option>NAVA</option>
     <option>PARCEIRA</option>
 
 </select>
@@ -349,8 +351,6 @@ body.dark .modal-conteudo{
         <option>INELCOM</option>
         <option>MAMINFO</option>
         <option>SPREAD</option>
-        <option>ARION</option>
-        <option>NAVA</option>
 
 
     </select>
@@ -468,20 +468,20 @@ const operadora =
 
 const parceira =
 
-    operadora === "VIVO"
+    operadora === "PARCEIRA"
 
-    ? "N/A"
-
-    : document.getElementById(
+    ? document.getElementById(
         "parceira2"
-      ).value;
+      ).value
+
+    : "N/A";
     const pendencia = document.getElementById('pendencia2').value;
   const motivo = document.getElementById('motivo2').value;
   const data = document.getElementById('data2').value || "SEM PREVISÃO";
 
 const texto =
 
-operadora === "VIVO"
+operadora !== "PARCEIRA"
 
 ? `OPERADORA: ${operadora}
 PENDÊNCIA: ${pendencia}
@@ -507,7 +507,10 @@ function validarOperadora(){
             "campoParceira"
         );
 
-    if(operadora === "VIVO"){
+    if(
+        operadora === "VIVO" ||
+        operadora === "ARION" ||
+        operadora === "NAVA"
 
         campoParceira.style.display =
             "none";
