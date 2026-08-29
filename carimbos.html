@@ -332,7 +332,7 @@ body.dark .modal-conteudo{
 <label>Operadora</label>
 
 <select id="operadora2"
-        onchange="validarOperadora()">
+        onchange="validarOperadora(); validarPendencia();">
 
     <option>VIVO</option>
     <option>ARION</option>
@@ -358,13 +358,7 @@ body.dark .modal-conteudo{
 </div>
     
 <label>Pendência</label>
-<select id="pendencia2">
-<option>AP</option>
-<option>FW</option>
-<option>SW</option>
-<option>LINK</option>
-<option>SIMETBOX</option>
-</select>
+<select id="pendencia2"></select>
 
 <label>Motivo</label>
 <select id="motivo2">
@@ -527,6 +521,42 @@ function validarOperadora(){
     }
 
 }
+function validarPendencia(){
+
+    const operadora =
+        document.getElementById(
+            "operadora2"
+        ).value;
+
+    const pendencia =
+        document.getElementById(
+            "pendencia2"
+        );
+
+    pendencia.innerHTML = "";
+
+    if(
+        operadora === "VIVO" ||
+        operadora === "ARION" ||
+        operadora === "NAVA"
+    ){
+
+        pendencia.innerHTML =
+            '<option>LINK</option>';
+
+    }else{
+
+        pendencia.innerHTML = `
+            <option>AP</option>
+            <option>FW</option>
+            <option>SW</option>
+            <option>LINK</option>
+            <option>SIMETBOX</option>
+        `;
+
+    }
+
+}
 function copiarCarimbo2(){
 
     const texto =
@@ -575,6 +605,7 @@ function alternarTema(){
 window.addEventListener("load", () => {
 
     validarOperadora();
+    validarPendencia();
     
     const tema =
         localStorage.getItem("tema");
