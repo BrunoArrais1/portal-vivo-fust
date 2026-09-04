@@ -523,7 +523,7 @@ body.dark .modal-conteudo{
     class="campo-curto">
 <label>Falhas Comuns</label>
 
-<div class="falhas">
+<div class="falhas" id="grupoFalhas">
 
 <button type="button" onclick="definirFalha('AP-XX Down, favor verificar infra e se houver portas com led laranja, favor corrigir cabos ou conectores.')">AP DOWN</button>
 
@@ -551,14 +551,30 @@ body.dark .modal-conteudo{
 
 </div>
 
+<div
+    id="falhaBandaLarga"
+    style="display:none;text-align:center;">
+
+    <button
+        type="button"
+        onclick="definirFalha('Equipamentos estão desconectados em nossa gerência, favor verificar se estão ligados corretamente, bem como a infra do local (cabos e conectores).')">
+
+        EQUIPAMENTOS FORA
+
+    </button>
+
+</div>
+
 <div class="area-final">
 
     <label>Descrição da Falha</label>
 
     <textarea id="falha"></textarea>
 
-<div class="titulo-copia">
-
+<div
+    id="grupoResumo"
+    class="titulo-copia">
+    
     <label style="margin:0;">
         Resumo Manutenção
     </label>
@@ -574,14 +590,18 @@ body.dark .modal-conteudo{
 
 </div>
 
-<div class="obs-resumo">
+<div
+    id="obsResumo"
+    class="obs-resumo">
     (Copiar esse texto e colar no campo Resumo do portal DELFIA)
 </div>
 
 <textarea id="resumoManutencao" readonly></textarea>
 
-<div class="titulo-copia">
-
+<div
+    id="grupoPortalTexto"
+    class="titulo-copia">
+    
     <label style="margin:2;">
         Texto Portal
     </label>
@@ -736,6 +756,47 @@ const bandaLarga =
 
     linkParceira === "ARION" ||
     linkParceira === "NAVA";
+
+    document.getElementById(
+    "grupoFalhas"
+).style.display =
+
+    bandaLarga ? "none" : "grid";
+
+document.getElementById(
+    "falhaBandaLarga"
+).style.display =
+
+    bandaLarga ? "block" : "none";
+
+document.getElementById(
+    "grupoResumo"
+).style.display =
+
+    bandaLarga ? "none" : "flex";
+
+document.getElementById(
+    "obsResumo"
+).style.display =
+    bandaLarga ? "none" : "block";
+        
+document.getElementById(
+    "resumoManutencao"
+).style.display =
+
+    bandaLarga ? "none" : "block";
+
+document.getElementById(
+    "grupoPortalTexto"
+).style.display =
+
+    bandaLarga ? "none" : "flex";
+
+document.getElementById(
+    "textoPortal"
+).style.display =
+
+    bandaLarga ? "none" : "block";
 
 document.getElementById(
     "grupoBandaLarga"
@@ -1325,6 +1386,34 @@ function limparFormulario(){
             document.getElementById(
             "grupoPortal"
             ).style.display = "flex";
+
+            document.getElementById(
+            "grupoFalhas"
+            ).style.display = "grid";
+
+            document.getElementById(
+            "falhaBandaLarga"
+            ).style.display = "none";
+
+            document.getElementById(
+            "grupoResumo"
+            ).style.display = "flex";
+
+            document.getElementById(
+            "resumoManutencao"
+            ).style.display = "block";
+
+            document.getElementById(
+            "obsResumo"
+            ).style.display = "block";
+            
+            document.getElementById(
+            "grupoPortalTexto"
+            ).style.display = "flex";
+
+            document.getElementById(
+            "textoPortal"
+            ).style.display = "block";
             
             mostrarAviso(
                 "Formulário limpo com sucesso."
