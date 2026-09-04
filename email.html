@@ -523,7 +523,7 @@ body.dark .modal-conteudo{
     class="campo-curto">
 <label>Falhas Comuns</label>
 
-<div class="falhas" id="grupoFalhas">
+<div class="falhas">
 
 <button type="button" onclick="definirFalha('AP-XX Down, favor verificar infra e se houver portas com led laranja, favor corrigir cabos ou conectores.')">AP DOWN</button>
 
@@ -551,30 +551,14 @@ body.dark .modal-conteudo{
 
 </div>
 
-<div
-    id="falhaBandaLarga"
-    style="display:none;text-align:center;">
-
-    <button
-        type="button"
-        onclick="definirFalha('Equipamentos estão desconectados em nossa gerência, favor verificar se estão ligados corretamente, bem como a infra do local (cabos e conectores).')">
-
-        EQUIPAMENTOS FORA
-
-    </button>
-
-</div>
-
 <div class="area-final">
 
     <label>Descrição da Falha</label>
 
     <textarea id="falha"></textarea>
 
-<div
-    id="grupoResumo"
-    class="titulo-copia">
-    
+<div class="titulo-copia">
+
     <label style="margin:0;">
         Resumo Manutenção
     </label>
@@ -590,18 +574,14 @@ body.dark .modal-conteudo{
 
 </div>
 
-<div
-    id="obsResumo"
-    class="obs-resumo">
+<div class="obs-resumo">
     (Copiar esse texto e colar no campo Resumo do portal DELFIA)
 </div>
 
 <textarea id="resumoManutencao" readonly></textarea>
 
-<div
-    id="grupoPortalTexto"
-    class="titulo-copia">
-    
+<div class="titulo-copia">
+
     <label style="margin:2;">
         Texto Portal
     </label>
@@ -622,7 +602,7 @@ body.dark .modal-conteudo{
 
 <div class="acoes">
 
-    <div class="grupo-acao" id="grupoEmail">
+    <div class="grupo-acao">
 
         <div class="obs-botao">
             (não precisa Gerar Texto)
@@ -638,7 +618,7 @@ body.dark .modal-conteudo{
 
     </div>
 
-    <div class="grupo-acao" id="grupoTexto">
+    <div class="grupo-acao">
 
         <div class="obs-botao">
             (clicar antes de Abrir Portal)
@@ -654,7 +634,7 @@ body.dark .modal-conteudo{
 
     </div>
 
-    <div class="grupo-acao" id="grupoPortal">
+    <div class="grupo-acao">
 
         <div class="obs-botao">
             (primeiro Gerar Texto)
@@ -752,75 +732,18 @@ const linkParceira =
     .trim()
     .toUpperCase();
 
-const bandaLarga =
-
-    linkParceira === "ARION" ||
-    linkParceira === "NAVA";
-
-    document.getElementById(
-    "grupoFalhas"
-).style.display =
-
-    bandaLarga ? "none" : "grid";
-
-document.getElementById(
-    "falhaBandaLarga"
-).style.display =
-
-    bandaLarga ? "block" : "none";
-
-document.getElementById(
-    "grupoResumo"
-).style.display =
-
-    bandaLarga ? "none" : "flex";
-
-document.getElementById(
-    "obsResumo"
-).style.display =
-    bandaLarga ? "none" : "block";
-        
-document.getElementById(
-    "resumoManutencao"
-).style.display =
-
-    bandaLarga ? "none" : "block";
-
-document.getElementById(
-    "grupoPortalTexto"
-).style.display =
-
-    bandaLarga ? "none" : "flex";
-
-document.getElementById(
-    "textoPortal"
-).style.display =
-
-    bandaLarga ? "none" : "block";
-
 document.getElementById(
     "grupoBandaLarga"
 ).style.display =
 
-    bandaLarga ? "flex" : "none";
+(
+    linkParceira === "ARION" ||
+    linkParceira === "NAVA"
+)
 
-document.getElementById(
-    "grupoEmail"
-).style.display =
+? "flex"
 
-    bandaLarga ? "none" : "flex";
-
-document.getElementById(
-    "grupoTexto"
-).style.display =
-
-    bandaLarga ? "none" : "flex";
-
-document.getElementById(
-    "grupoPortal"
-).style.display =
-
-    bandaLarga ? "none" : "flex";
+: "none";
 const campoParceira =
     document.getElementById("parceira");
 
@@ -1128,7 +1051,6 @@ Solicitamos análise do link banda larga da unidade abaixo:
 
 INEP: ${inep}
 ESCOLA: ${escola}
-ID VIVO: ${id}
 CHAMADO VIVO: ${chamado}
 
 Descrição da falha:
@@ -1141,36 +1063,22 @@ const copia =
 const linkEmail =
 `mailto:${emailDestino}?cc=${encodeURIComponent(copia)}&subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
     
-mostrarConfirmacao(
+    mostrarConfirmacao(
 
-    "⚠️ Acionar parceiro de Banda Larga?",
+        "⚠️ Acionar parceiro de Banda Larga?",
 
-    function(confirmado){
+        function(confirmado){
 
-        if(confirmado){
+            if(confirmado){
 
-            mostrarConfirmacao(
+                window.location.href =
+                    linkEmail;
 
-                "⚠️ Antes de enviar o e-mail, lembre-se de alterar para a caixa do NOC FUST e adicionar a sua assinatura no final do corpo do e-mail.<br><br>Clique em Continuar para prosseguir.",
-
-                function(confirmado2){
-
-                    if(confirmado2){
-
-                        window.location.href =
-                            linkEmail;
-
-                    }
-
-                }
-
-            );
+            }
 
         }
 
-    }
-
-);
+    );
 
 }
 function abrirPortal(){
@@ -1374,46 +1282,6 @@ function limparFormulario(){
             document.getElementById(
             "grupoBandaLarga"
             ).style.display = "none";
-
-            document.getElementById(
-            "grupoEmail"
-            ).style.display = "flex";
-
-            document.getElementById(
-            "grupoTexto"
-            ).style.display = "flex";
-
-            document.getElementById(
-            "grupoPortal"
-            ).style.display = "flex";
-
-            document.getElementById(
-            "grupoFalhas"
-            ).style.display = "grid";
-
-            document.getElementById(
-            "falhaBandaLarga"
-            ).style.display = "none";
-
-            document.getElementById(
-            "grupoResumo"
-            ).style.display = "flex";
-
-            document.getElementById(
-            "resumoManutencao"
-            ).style.display = "block";
-
-            document.getElementById(
-            "obsResumo"
-            ).style.display = "block";
-            
-            document.getElementById(
-            "grupoPortalTexto"
-            ).style.display = "flex";
-
-            document.getElementById(
-            "textoPortal"
-            ).style.display = "block";
             
             mostrarAviso(
                 "Formulário limpo com sucesso."
