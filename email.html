@@ -602,7 +602,7 @@ body.dark .modal-conteudo{
 
 <div class="acoes">
 
-    <div class="grupo-acao">
+    <div class="grupo-acao" id="grupoEmail">
 
         <div class="obs-botao">
             (não precisa Gerar Texto)
@@ -618,7 +618,7 @@ body.dark .modal-conteudo{
 
     </div>
 
-    <div class="grupo-acao">
+    <div class="grupo-acao" id="grupoTexto">
 
         <div class="obs-botao">
             (clicar antes de Abrir Portal)
@@ -634,7 +634,7 @@ body.dark .modal-conteudo{
 
     </div>
 
-    <div class="grupo-acao">
+    <div class="grupo-acao" id="grupoPortal">
 
         <div class="obs-botao">
             (primeiro Gerar Texto)
@@ -732,18 +732,34 @@ const linkParceira =
     .trim()
     .toUpperCase();
 
+const bandaLarga =
+
+    linkParceira === "ARION" ||
+    linkParceira === "NAVA";
+
 document.getElementById(
     "grupoBandaLarga"
 ).style.display =
 
-(
-    linkParceira === "ARION" ||
-    linkParceira === "NAVA"
-)
+    bandaLarga ? "flex" : "none";
 
-? "flex"
+document.getElementById(
+    "grupoEmail"
+).style.display =
 
-: "none";
+    bandaLarga ? "none" : "flex";
+
+document.getElementById(
+    "grupoTexto"
+).style.display =
+
+    bandaLarga ? "none" : "flex";
+
+document.getElementById(
+    "grupoPortal"
+).style.display =
+
+    bandaLarga ? "none" : "flex";
 const campoParceira =
     document.getElementById("parceira");
 
@@ -1064,22 +1080,36 @@ const copia =
 const linkEmail =
 `mailto:${emailDestino}?cc=${encodeURIComponent(copia)}&subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
     
-    mostrarConfirmacao(
+mostrarConfirmacao(
 
-        "⚠️ Acionar parceiro de Banda Larga?",
+    "⚠️ Acionar parceiro de Banda Larga?",
 
-        function(confirmado){
+    function(confirmado){
 
-            if(confirmado){
+        if(confirmado){
 
-                window.location.href =
-                    linkEmail;
+            mostrarConfirmacao(
 
-            }
+                "⚠️ Antes de enviar o e-mail, lembre-se de alterar para a caixa do NOC FUST e adicionar a sua assinatura no final do corpo do e-mail.<br><br>Clique em Continuar para prosseguir.",
+
+                function(confirmado2){
+
+                    if(confirmado2){
+
+                        window.location.href =
+                            linkEmail;
+
+                    }
+
+                }
+
+            );
 
         }
 
-    );
+    }
+
+);
 
 }
 function abrirPortal(){
@@ -1283,6 +1313,18 @@ function limparFormulario(){
             document.getElementById(
             "grupoBandaLarga"
             ).style.display = "none";
+
+            document.getElementById(
+            "grupoEmail"
+            ).style.display = "flex";
+
+            document.getElementById(
+            "grupoTexto"
+            ).style.display = "flex";
+
+            document.getElementById(
+            "grupoPortal"
+            ).style.display = "flex";
             
             mostrarAviso(
                 "Formulário limpo com sucesso."
