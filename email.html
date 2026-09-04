@@ -649,7 +649,25 @@ body.dark .modal-conteudo{
         </button>
 
     </div>
+<div
+    class="grupo-acao"
+    id="grupoBandaLarga"
+    style="display:none;">
 
+    <div class="obs-botao">
+        (somente para ARION/NAVA)
+    </div>
+
+    <button
+        class="btn-gerar"
+        type="button"
+        onclick="acionarBandaLarga()">
+
+        📡 Acionar Banda Larga
+
+    </button>
+
+</div>
 </div>    
 <script>
 
@@ -709,6 +727,23 @@ mostrarAviso(
         document.getElementById("link").value =
             registro.LINK || "";
         
+const linkParceira =
+    (registro.LINK || "")
+    .trim()
+    .toUpperCase();
+
+document.getElementById(
+    "grupoBandaLarga"
+).style.display =
+
+(
+    linkParceira === "ARION" ||
+    linkParceira === "NAVA"
+)
+
+? "flex"
+
+: "none";
 const campoParceira =
     document.getElementById("parceira");
 
@@ -947,6 +982,105 @@ mostrarConfirmacao(
 );
 
 }
+function acionarBandaLarga(){
+
+    if(!validarChamado()){
+        return;
+    }
+
+    const linkParceira =
+        document.getElementById("link")
+        .value
+        .trim()
+        .toUpperCase();
+
+    const emails = {
+
+        "ARION":
+            "atendimento@grupoarion.com.br",
+
+        "NAVA":
+            "conectividade@nava.com.br"
+
+    };
+    
+    const falha =
+    document.getElementById("falha").value;
+    
+    if(!falha.trim()){
+
+    mostrarAviso(
+        "Preencha a descrição da falha."
+    );
+
+    return;
+
+}
+    const emailDestino =
+        emails[linkParceira];
+
+    if(!emailDestino){
+
+        mostrarAviso(
+            "Link não elegível para Banda Larga."
+        );
+
+        return;
+
+    }
+
+    const inep =
+        document.getElementById("inep").value;
+
+    const escola =
+        document.getElementById("escola").value;
+
+    const chamado =
+        document.getElementById("chamado").value;
+
+    const id =
+    document.getElementById("idvivo").value;
+
+    const assunto =
+    `LINK BANDA LARGA - ${linkParceira} - INEP ${inep} - ${escola} - ID ${id}`;
+
+    const corpo =
+`Prezados,
+
+Solicitamos análise do link banda larga da unidade abaixo:
+
+INEP: ${inep}
+ESCOLA: ${escola}
+CHAMADO VIVO: ${chamado}
+
+Descrição da falha:
+
+${falha}`;
+
+const copia =
+    "noc_fust.br@telefonica.com";
+
+const linkEmail =
+`mailto:${emailDestino}?cc=${encodeURIComponent(copia)}&subject=${encodeURIComponent(assunto)}&body=${encodeURIComponent(corpo)}`;
+    
+    mostrarConfirmacao(
+
+        "⚠️ Acionar parceiro de Banda Larga?",
+
+        function(confirmado){
+
+            if(confirmado){
+
+                window.location.href =
+                    linkEmail;
+
+            }
+
+        }
+
+    );
+
+}
 function abrirPortal(){
 
     const parceira =
@@ -1145,6 +1279,10 @@ function limparFormulario(){
 
             document.getElementById("inep").focus();
 
+            document.getElementById(
+            "grupoBandaLarga"
+            ).style.display = "none";
+            
             mostrarAviso(
                 "Formulário limpo com sucesso."
             );
