@@ -1067,22 +1067,34 @@ const linkEmail =
     
     mostrarConfirmacao(
 
-        "⚠️ Acionar parceiro de Banda Larga?",
+    "⚠️ Acionar parceiro de Banda Larga?",
 
-        function(confirmado){
+    function(confirmado){
 
-            if(confirmado){
+        if(confirmado){
 
-                window.location.href =
-                    linkEmail;
+            mostrarConfirmacao(
 
-            }
+                "⚠️ Antes de enviar o e-mail, lembre-se de alterar para a caixa do NOC FUST e adicionar a sua assinatura no final do corpo do e-mail.<br><br>Clique em Continuar para prosseguir.",
+
+                function(confirmado2){
+
+                    if(confirmado2){
+
+                        window.location.href =
+                            linkEmail;
+
+                    }
+
+                }
+
+            );
 
         }
 
-    );
+    }
 
-}
+);
 function abrirPortal(){
 
     const parceira =
