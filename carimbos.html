@@ -238,6 +238,7 @@ body.dark .modal-conteudo{
 <div class="tabs">
   <button class="tab active" onclick="trocarAba('aba1', this)">Carimbo TASK</button>
   <button class="tab" onclick="trocarAba('aba2', this)">Carimbo Incidente</button>
+  <button class="tab" onclick="trocarAba('aba3', this)">Carimbo IOT</button>
 </div>
 
 <!-- ABA 1 -->
@@ -332,7 +333,7 @@ body.dark .modal-conteudo{
 <label>Operadora</label>
 
 <select id="operadora2"
-        onchange="validarOperadora(); validarPendencia();">
+        oninput="validarOperadora(); validarPendencia();">
 
     <option>VIVO</option>
     <option>ARION</option>
@@ -379,8 +380,56 @@ body.dark .modal-conteudo{
 <textarea id="resultado2" readonly></textarea>
 
 </div>
+<!-- ABA 3 -->
+<div id="aba3" class="container aba">
 
+<label>INEP</label>
+<input id="iotInep"
+       placeholder="Digite o INEP"
+       onchange="buscarEscolaIOT()">
+
+<label>Escola</label>
+<input id="iotEscola" readonly>
+
+<label>AP Antigo</label>
+<input id="apAntigo"
+       placeholder="Ex.: AP-04">
+
+<label>Serial Number Antigo</label>
+<input id="serialAntigo" placeholder="22510E7006721">
+
+<label>MAC Address Antigo</label>
+<input id="macAntigo" placeholder="98-BA-5F-9E-B6-3E">
+
+<label>AP Novo</label>
+<input id="apNovo"
+       placeholder="Ex.: AP-04">
+
+<label>Serial Number Novo</label>
+<input id="serialNovo" placeholder="V258037000038">
+
+<label>MAC Address Novo</label>
+<input id="macNovo" placeholder="50-3D-D1-A6-F1-F2">
+
+<button class="btn-gerar"
+        onclick="gerarCarimboIOT()">
+
+    Gerar Carimbo
+
+</button>
+
+<button class="btn-copiar"
+        onclick="copiarCarimboIOT()">
+
+    Copiar Carimbo
+
+</button>
+
+<textarea id="resultadoIOT" readonly></textarea>
+
+</div>
 <script>
+let dadosEscolas = [];
 
 if(
     !sessionStorage.getItem(
@@ -396,15 +445,20 @@ function trocarAba(id, el) {
 
   document.getElementById('aba1').classList.remove('ativa');
   document.getElementById('aba2').classList.remove('ativa');
+  document.getElementById('aba3').classList.remove('ativa');
 
   document.getElementById(id).classList.add('ativa');
 
   var tabs = document.getElementsByClassName('tab');
+
   for (var i = 0; i < tabs.length; i++) {
+
     tabs[i].classList.remove('active');
+
   }
 
   el.classList.add('active');
+
 }
 
 /* CARIMBO 1 */
@@ -575,6 +629,127 @@ function copiarCarimbo2(){
         });
 
 }
+function gerarCarimboIOT(){
+
+    const hora =
+        new Date().getHours();
+
+    const saudacao =
+
+        hora < 12
+
+        ? "Bom dia"
+
+        : hora < 18
+
+        ? "Boa tarde"
+
+        : "Boa noite";
+
+    const inep =
+        document.getElementById(
+            "iotInep"
+        ).value;
+
+    const escola =
+        document.getElementById(
+            "iotEscola"
+        ).value;
+
+    const apAntigo =
+        document.getElementById(
+            "apAntigo"
+        ).value;
+
+    const serialAntigo =
+        document.getElementById(
+            "serialAntigo"
+        ).value;
+
+    const macAntigo =
+        document.getElementById(
+            "macAntigo"
+        ).value;
+
+    const apNovo =
+        document.getElementById(
+            "apNovo"
+        ).value;
+
+    const serialNovo =
+        document.getElementById(
+            "serialNovo"
+        ).value;
+
+    const macNovo =
+        document.getElementById(
+            "macNovo"
+        ).value;
+
+    const texto =
+
+`${saudacao}, equipe!
+
+Por gentileza, substituir o seguinte AP (Wifeed):
+
+INEP - ${inep} - ${escola}
+
+ANTIGO (${apAntigo})
+
+Serial Number
+${serialAntigo}
+
+MAC Address
+${macAntigo}
+
+NOVO (${apNovo})
+
+Serial Number
+${serialNovo}
+
+MAC Address
+${macNovo}`;
+
+if(escola === "INEP NÃO ENCONTRADO"){
+    mostrarAviso("INEP não localizado na base de dados.");
+    return;
+}
+if(
+    !inep.trim() ||
+    !escola.trim() ||
+    !apAntigo.trim() ||
+    !serialAntigo.trim() ||
+    !macAntigo.trim() ||
+    !apNovo.trim() ||
+    !serialNovo.trim() ||
+    !macNovo.trim()
+){
+    mostrarAviso("Preencha todos os campos.");
+    return;
+}
+    document.getElementById(
+        "resultadoIOT"
+    ).value = texto;
+    
+}
+function copiarCarimboIOT(){
+
+    const texto =
+        document.getElementById(
+            "resultadoIOT"
+        ).value;
+
+    navigator.clipboard
+        .writeText(texto)
+        .then(() => {
+
+            mostrarAviso(
+                "Carimbo copiado com sucesso!"
+            );
+
+        });
+
+}
 function voltarPortal(){
 
     window.location.replace(
@@ -603,7 +778,22 @@ function alternarTema(){
 }
 
 window.addEventListener("load", () => {
+    
+fetch("dados.json")
+    .then(response => response.json())
+    .then(data => {
 
+        dadosEscolas = data;
+
+    })
+    .catch(error => {
+
+        console.error(
+            "Erro ao carregar dados.json:",
+            error
+        );
+
+    });
     validarOperadora();
     validarPendencia();
     
@@ -664,6 +854,24 @@ function fecharModal(){
         "modalAviso"
     ).style.display = "none";
 
+}
+function buscarEscolaIOT(){
+
+    const inep =
+        document.getElementById(
+            "iotInep"
+        ).value.trim();
+
+    const escolaEncontrada =
+        dadosEscolas.find(item =>
+            String(item.INEP) === inep
+        );
+
+    document.getElementById(
+        "iotEscola"
+    ).value = escolaEncontrada
+        ? escolaEncontrada.ESCOLA
+        : "INEP NÃO ENCONTRADO";
 }
 </script>
 <button
