@@ -739,12 +739,32 @@ function copiarCarimboIOT(){
             "resultadoIOT"
         ).value;
 
+    if(!texto.trim()){
+        mostrarAviso(
+            "Gere o carimbo antes de enviar."
+        );
+        return;
+    }
+
     navigator.clipboard
         .writeText(texto)
         .then(() => {
 
+            // Abre a conversa específica do Teams
+            window.open(
+                "https://teams.microsoft.com/l/chat/19:58ca8d4d3705410c9a0e1144546a8313@thread.v2/conversations?context=%7B%22contextType%22%3A%22chat%22%7D",
+                "_blank"
+            );
+
             mostrarAviso(
-                "Carimbo copiado com sucesso!"
+                "Carimbo copiado! Cole no Teams com Ctrl+V e pressione Enter."
+            );
+
+        })
+        .catch(() => {
+
+            mostrarAviso(
+                "Erro ao copiar o carimbo."
             );
 
         });
