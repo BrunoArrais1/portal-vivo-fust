@@ -511,11 +511,33 @@ body.dark .modal-conteudo{
     class="readonly"
     readonly>
 
-<label>ID Vivo</label>
-<input
-    id="idvivo"
-    class="readonly campo-curto"
-    readonly>
+<div class="linha-campos">
+
+    <div>
+
+        <label>ID Vivo</label>
+
+        <input
+            id="idvivo"
+            class="readonly campo-curto"
+            readonly>
+
+    </div>
+
+    <div
+        id="grupoDesignador"
+        style="display:none;">
+
+        <label>Designador</label>
+
+        <input
+            id="designador"
+            class="readonly campo-curto"
+            readonly>
+
+    </div>
+
+</div>
 
 <label>Chamado Vivo <span style="color:red">*</span></label>
 <input
@@ -716,6 +738,16 @@ async function buscarINEP(){
 
         if(!registro){
 
+            document.getElementById("designador").value = "";
+
+document.getElementById(
+    "grupoDesignador"
+).style.display = "none";
+
+document.getElementById(
+    "grupoBandaLarga"
+).style.display = "none";
+            
 mostrarAviso(
     "INEP não encontrado."
 );
@@ -743,8 +775,18 @@ document.getElementById(
 )
 
 ? "flex"
-
 : "none";
+        
+    document.getElementById(
+    "grupoDesignador"
+).style.display =
+(
+    linkParceira === "ARION" ||
+    linkParceira === "NAVA"
+)
+? "block"
+: "none";
+        
 const campoParceira =
     document.getElementById("parceira");
 
@@ -769,6 +811,9 @@ if(
 
         document.getElementById("idvivo").value =
             registro.ID_VIVO;
+        document.getElementById("designador").value =
+            registro.DESIGNADOR || "";
+        
 if(
     registro.LINK &&
     (
@@ -1041,6 +1086,9 @@ function acionarBandaLarga(){
 
     const id =
     document.getElementById("idvivo").value;
+    
+    const designador =
+    document.getElementById("designador").value;
 
     const assunto =
     `LINK BANDA LARGA - ${linkParceira} - INEP ${inep} - ${escola} - ID ${id}`;
@@ -1053,6 +1101,7 @@ Solicitamos análise do link banda larga da unidade abaixo:
 INEP: ${inep}
 ESCOLA: ${escola}
 ID VIVO: ${id}
+DESIGNADOR: ${designador}
 CHAMADO VIVO: ${chamado}
 
 Descrição da falha:
@@ -1281,8 +1330,8 @@ function limparFormulario(){
             document.getElementById("link").value = "";
             document.getElementById("escola").value = "";
             document.getElementById("idvivo").value = "";
+            document.getElementById("designador").value = "";
             document.getElementById("chamado").value = "";
-
             document.getElementById("falha").value = "";
             document.getElementById("resumoManutencao").value = "";
             document.getElementById("textoPortal").value = "";
@@ -1298,6 +1347,9 @@ function limparFormulario(){
 
             document.getElementById(
             "grupoBandaLarga"
+            ).style.display = "none";
+            document.getElementById(
+            "grupoDesignador"
             ).style.display = "none";
             
             mostrarAviso(
