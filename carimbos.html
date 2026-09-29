@@ -264,14 +264,23 @@ body.dark .modal-conteudo{
 </select>
 
 <label>Parceira</label>
-<select id="parceira">
+<select id="parceira" onchange="validarParceira()">
 <option>DELFIA</option>
 <option>INELCOM</option>
 <option>MAMINFO</option>
 <option>SPREAD</option>
 <option>ARION</option>
 <option>NAVA</option>
+<option>VIVO</option>
 </select>
+
+<div id="campoValidadoPor" style="display:none;">
+    <label>VALIDADO POR</label>
+    <select id="validadoPor">
+        <option>OMADA</option>
+        <option>TESTADO REDE</option>
+    </select>
+</div>
 
 <label>Motivo</label>
 <select id="motivo">
@@ -473,23 +482,49 @@ function gerarCarimbo(){
   const status =
       document.getElementById('status').value;
 
-  const parceira =
+const parceira =
       document.getElementById('parceira').value;
 
-  const motivo =
+const validadoPor =
+      document.getElementById('validadoPor')?.value || "";
+
+const motivo =
       document.getElementById('motivo').value;
 
   const tecnico =
       document.getElementById('tecnico').value;
 
-  const texto = `PENDÊNCIA: ${pendencia}
+const texto = `PENDÊNCIA: ${pendencia}
 STATUS: ${status}
-PARCEIRA: ${parceira}
+PARCEIRA: ${parceira}${
+    parceira === "VIVO"
+    ? `\nVALIDADO POR: ${validadoPor}`
+    : ""
+}
 MOTIVO: ${motivo}
 TÉCNICO: ${tecnico}`;
 
   document.getElementById('resultado').value =
       texto;
+
+}
+function validarParceira(){
+
+    const parceira =
+        document.getElementById("parceira").value;
+
+    const campo =
+        document.getElementById("campoValidadoPor");
+
+    if(parceira === "VIVO"){
+
+        campo.style.display = "block";
+
+    }else{
+
+        campo.style.display = "none";
+
+    }
 
 }
 function copiar(){
@@ -819,6 +854,7 @@ fetch("dados.json")
     });
     validarOperadora();
     validarPendencia();
+    validarParceira();
     
     const tema =
         localStorage.getItem("tema");
