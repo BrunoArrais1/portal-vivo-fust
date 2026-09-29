@@ -516,6 +516,9 @@ function validarParceira(){
     const campo =
         document.getElementById("campoValidadoPor");
 
+    const validado =
+        document.getElementById("validadoPor");
+
     if(parceira === "VIVO"){
 
         campo.style.display = "block";
@@ -523,6 +526,7 @@ function validarParceira(){
     }else{
 
         campo.style.display = "none";
+        validado.selectedIndex = 0;
 
     }
 
