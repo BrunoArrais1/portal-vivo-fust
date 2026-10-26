@@ -74382,5 +74382,21 @@
     "PARCEIRA": "DELFIA",
     "LINK": "ARION",
     "DESIGNADOR": "VIVO.PR.BLIVR000330"
+  },
+  {
+    "INEP": 29396000,
+    "ESCOLA": "CRECHE MARIA JOSE DA SILVA CHAUSSE",
+    "ID_VIVO": 2211709,
+    "PARCEIRA": "DELFIA",
+    "LINK": "VIVO",
+    "DESIGNADOR": "N/A"
+  },
+  {
+    "INEP": 41374584,
+    "ESCOLA": "ANJO DA GUARDA C M E I",
+    "ID_VIVO": 2211939,
+    "PARCEIRA": "MAMINFO",
+    "LINK": "ARION",
+    "DESIGNADOR": "N/A"
   }
 ]
