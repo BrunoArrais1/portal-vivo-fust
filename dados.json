@@ -74462,5 +74462,13 @@
     "PARCEIRA": "DELFIA",
     "LINK": "VIVO",
     "DESIGNADOR": "N/A"
+  },
+  {
+    "INEP": 31243663,
+    "ESCOLA": "ESC MUN JOSE SOARES SILVA",
+    "ID_VIVO": 2212409,
+    "PARCEIRA": "MAMINFO",
+    "LINK": "ARION",
+    "DESIGNADOR": "VIVO.MG.BLIVR000170"
   }
 ]
