@@ -16,6 +16,14 @@
     "DESIGNADOR": "N/A"
   },
  {
+    "INEP": 41162595,
+    "ESCOLA": "NOSSA SRA DO CARMO C M E I DO C",
+    "ID_VIVO": 2212296,
+    "PARCEIRA": "MAMINFO",
+    "LINK": "VIVO",
+    "DESIGNADOR": "N/A"
+  },
+ {
     "INEP": 41389425,
     "ESCOLA": "MENINO JESUS C M E I",
     "ID_VIVO": 2211807,
@@ -46,6 +54,14 @@
     "PARCEIRA": "MAMINFO",
     "LINK": "NAVA",
     "DESIGNADOR": "Designação NAVA: 2407737"
+  },
+  {
+    "INEP": 43089720,
+    "ESCOLA": "ESCOLA DE EDUCACAO INFANTIL",
+    "ID_VIVO": 2212269,
+    "PARCEIRA": "MAMINFO",
+    "LINK": "NAVA",
+    "DESIGNADOR": "Designação NAVA: 2408337"
   },
   {
     "INEP": 41041615,
@@ -86,6 +102,14 @@
     "PARCEIRA": "DELFIA",
     "LINK": "ARION",
     "DESIGNADOR": "VIVO.PR.BLIVR000316"
+  },
+  {
+    "INEP": 41004701,
+    "ESCOLA": "SALTINHO DO OESTE E M DE EI EF",
+    "ID_VIVO": 2211765,
+    "PARCEIRA": "MAMINFO",
+    "LINK": "ARION",
+    "DESIGNADOR": "VIVO.PR.BLIVR000326"
   },
   {
     "INEP": 29270723,
