@@ -1000,6 +1000,8 @@ let textoImportante =
 - O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
 - Havendo problemas com a liberação de acesso, favor entrar em contato.`;
 
+if(ehCuritibaPR()){
+
     textoImportante =
 `IMPORTANTE:
 Para este chamado, é imprescindível o envio das informações dos dados do técnico com antecedência, de 12h a no máximo 24h antes da atividade para liberação de acesso na escola, por favor enviar:
@@ -1012,7 +1014,7 @@ Para este chamado, é imprescindível o envio das informações dos dados do té
 - Havendo problemas com a liberação de acesso, favor entrar em contato.`;
 
 }
-    const corpo =
+const corpo =
 `Prezados,
 
 Pedimos por gentileza que enviem um Field para verificar os equipamentos da unidade abaixo:
