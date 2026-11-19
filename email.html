@@ -514,6 +514,22 @@ body.dark .modal-conteudo{
 <div class="linha-campos">
 
     <div>
+        <label>Município</label>
+        <input
+            id="municipio"
+            class="readonly campo-curto"
+            readonly>
+    </div>
+
+    <div>
+        <label>UF</label>
+        <input
+            id="uf"
+            class="readonly campo-curto"
+            readonly>
+    </div>
+
+    <div>
 
         <label>ID Vivo</label>
 
@@ -523,6 +539,8 @@ body.dark .modal-conteudo{
             readonly>
 
     </div>
+
+</div>
 
     <div
         id="grupoDesignador"
@@ -534,8 +552,6 @@ body.dark .modal-conteudo{
             id="designador"
             class="readonly campo-curto"
             readonly>
-
-    </div>
 
 </div>
 
@@ -759,6 +775,11 @@ mostrarAviso(
             registro.PARCEIRA;
         document.getElementById("link").value =
             registro.LINK || "";
+        document.getElementById("municipio").value =
+            registro.MUNICIPIO || "";
+        document.getElementById("uf").value =
+            registro.UF || "";
+
         
 const linkParceira =
     (registro.LINK || "")
@@ -808,7 +829,10 @@ if(
 }
         document.getElementById("escola").value =
             registro.ESCOLA;
-
+        document.getElementById("municipio").value =
+            registro.MUNICIPIO || "";
+        document.getElementById("uf").value =
+            registro.UF || "";
         document.getElementById("idvivo").value =
             registro.ID_VIVO;
         document.getElementById("designador").value =
@@ -961,6 +985,24 @@ if(!falha){
     const assunto =
 `MANUTENÇÃO - ${parceira} - INEP ${inep} - ${escola} - ID ${id} - CHAMADO ${chamado}`;
 
+let textoImportante =
+`IMPORTANTE:
+- O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
+- Havendo problemas com a liberação de acesso, favor entrar em contato.`;
+
+if(ehCuritibaPR()){
+
+    mostrarAviso(
+        "⚠️ ATENÇÃO:<br><br>Para Curitiba/PR é obrigatório informar previamente os dados do técnico (Nome e RG/CPF), com antecedência mínima de 12h e máxima de 24h antes da atividade."
+    );
+
+    textoImportante =
+`IMPORTANTE:
+- Para este chamado, é imprescindível o envio das informações dos dados do técnico com antecedência, de 12h a no máximo 24h antes da atividade, com NOME, RG ou CPF do técnico. Caso técnico seja prestador de serviços, informar a empresa que o técnico trabalha.
+- O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
+- Havendo problemas com a liberação de acesso, favor entrar em contato.`;
+
+}
     const corpo =
 `Prezados,
 
@@ -988,10 +1030,8 @@ Validações:
 - Entrar em contato com o NOC FUST no telefone (11) 3043-1333
 - Durante toda a tratativa, manter contato com o NOC para validação das ações.
 
-IMPORTANTE:
-- O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
-- Havendo problemas com a liberação de acesso, favor entrar em contato.`;
-    
+${textoImportante}`;
+
 if (
     parceira.toUpperCase() === "DELFIA" ||
     parceira.toUpperCase() === "MAMINFO"
@@ -1026,6 +1066,26 @@ mostrarConfirmacao(
     }
 
 );
+
+}
+function ehCuritibaPR(){
+
+    const municipio =
+        document.getElementById("municipio")
+        .value
+        .trim()
+        .toUpperCase();
+
+    const uf =
+        document.getElementById("uf")
+        .value
+        .trim()
+        .toUpperCase();
+
+    return (
+        municipio === "CURITIBA" &&
+        uf === "PR"
+    );
 
 }
 function acionarBandaLarga(){
@@ -1215,7 +1275,36 @@ if(!falha){
     return;
 
 }
+let textoImportante =
+`IMPORTANTE:
+- O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
+- Havendo problemas com a liberação de acesso, favor entrar em contato.`;
 
+if(ehCuritibaPR()){
+
+    if(
+        !sessionStorage.getItem("alertaCuritiba")
+    ){
+
+        sessionStorage.setItem(
+            "alertaCuritiba",
+            "ok"
+        );
+
+        mostrarAviso(
+            "⚠️ ATENÇÃO:<br><br>Para Curitiba/PR é obrigatório informar previamente os dados do técnico (Nome e RG/CPF), com antecedência mínima de 12h e máxima de 24h antes da atividade."
+        );
+
+        return;
+    }
+
+    textoImportante =
+`IMPORTANTE:
+- Para este chamado, é imprescindível o envio das informações dos dados do técnico com antecedência, de 12h a no máximo 24h antes da atividade, com NOME, RG ou CPF do técnico. Caso técnico seja prestador de serviços, informar a empresa que o técnico trabalha.
+- O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
+- Havendo problemas com a liberação de acesso, favor entrar em contato.`;
+
+}
 const assunto =
 `MANUTENÇÃO - ${parceiro} - INEP ${inep} - ${escola} - ID ${id} - CHAMADO ${chamado}`;
 
@@ -1247,8 +1336,7 @@ Validações:
 - Entrar em contato com o NOC FUST no telefone (11) 3043-1333.
 - Manter contato com o NOC durante toda a tratativa.
 
-IMPORTANTE:
-- O técnico deverá deixar o local somente após validação do NOC FUST.
+${textoImportante}
 `;
 
     document.getElementById("resumoManutencao").value =
@@ -1329,6 +1417,8 @@ function limparFormulario(){
             document.getElementById("parceira").value = "";
             document.getElementById("link").value = "";
             document.getElementById("escola").value = "";
+            document.getElementById("municipio").value = "";
+            document.getElementById("uf").value = "";
             document.getElementById("idvivo").value = "";
             document.getElementById("designador").value = "";
             document.getElementById("chamado").value = "";
@@ -1351,6 +1441,9 @@ function limparFormulario(){
             document.getElementById(
             "grupoDesignador"
             ).style.display = "none";
+            sessionStorage.removeItem(
+            "alertaCuritiba"
+);
             
             mostrarAviso(
                 "Formulário limpo com sucesso."
