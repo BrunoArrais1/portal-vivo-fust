@@ -749,9 +749,11 @@ async function buscarINEP(){
 
         const registro =
             dados.find(item =>
-                String(item.INEP) === String(inep)
-            );
+            String(item.INEP) === String(inep)
+    );
 
+            console.log(registro);
+        
         if(!registro){
 
             document.getElementById("designador").value = "";
@@ -834,7 +836,7 @@ if(
         document.getElementById("uf").value =
             registro.UF || "";
         document.getElementById("idvivo").value =
-            registro.ID_VIVO;
+            registro.ID || "";
         document.getElementById("designador").value =
             registro.DESIGNADOR || "";
         
