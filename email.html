@@ -837,9 +837,17 @@ if(
             registro.UF || "";
         document.getElementById("idvivo").value =
             registro.ID || "";
-        document.getElementById("designador").value =
-            registro.DESIGNADOR || "";
-        
+document.getElementById("designador").value =
+    registro.DESIGNADOR || "";
+
+if(ehCuritibaPR()){
+
+    mostrarAviso(
+        "⚠️ ATENÇÃO:<br><br>INEP de Curitiba/PR, será necessário os dados do técnico com antecedência."
+    );
+
+}
+
 if(
     registro.LINK &&
     (
@@ -995,7 +1003,7 @@ let textoImportante =
 if(ehCuritibaPR()){
 
     mostrarAviso(
-        "⚠️ ATENÇÃO:<br><br>Para Curitiba/PR é obrigatório informar previamente os dados do técnico (Nome e RG/CPF), com antecedência mínima de 12h e máxima de 24h antes da atividade."
+        "⚠️ ATENÇÃO:<br><br>INEP de Curitiba/PR, será necessário os dados do técnico com antecedência."
     );
 
     textoImportante =
@@ -1284,25 +1292,14 @@ let textoImportante =
 
 if(ehCuritibaPR()){
 
-    if(
-        !sessionStorage.getItem("alertaCuritiba")
-    ){
-
-        sessionStorage.setItem(
-            "alertaCuritiba",
-            "ok"
-        );
-
-        mostrarAviso(
-            "⚠️ ATENÇÃO:<br><br>Para Curitiba/PR é obrigatório informar previamente os dados do técnico (Nome e RG/CPF), com antecedência mínima de 12h e máxima de 24h antes da atividade."
-        );
-
-        return;
-    }
-
     textoImportante =
 `IMPORTANTE:
-- Para este chamado, é imprescindível o envio das informações dos dados do técnico com antecedência, de 12h a no máximo 24h antes da atividade, com NOME, RG ou CPF do técnico. Caso técnico seja prestador de serviços, informar a empresa que o técnico trabalha.
+Para este chamado, é imprescindível o envio das informações dos dados do técnico com antecedência, de 12h a no máximo 24h antes da atividade para liberação de acesso na escola, por favor enviar:
+
+-NOME;
+-RG ou CPF do técnico;
+-E caso técnico seja prestador de serviços, informar a empresa que o técnico trabalha.
+
 - O técnico deverá deixar o local somente após a validação ou confirmação do NOC FUST.
 - Havendo problemas com a liberação de acesso, favor entrar em contato.`;
 
