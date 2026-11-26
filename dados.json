@@ -75410,6 +75410,25 @@
     "UF": "AM"
   },
   {
+    "INEP": 31369497,
+    "ESCOLA": "EM GUILHERME MANOEL DE FARIA",
+    "ID": 2211999,
+    "PARCEIRA": "DELFIA",
+    "LINK": "ARION",
+    "DESIGNADOR": "VIVO.MG.BLIVR000151",
+    "MUNICIPIO": "MUTUM",
+    "UF": "MG"
+  },
+  {
+    "INEP": 31333069,
+    "ESCOLA": "CEMEI ARTUR MOURA MAIA VO TUCA",
+    "ID": 2212323,
+    "PARCEIRA": "DELFIA",
+    "LINK": "ARION",
+    "DESIGNADOR": "VIVO.MG.BLIVR000177",
+    "MUNICIPIO": "LUMINARIAS",
+    "UF": "MG"
+  }, {
     "INEP": 41010159,
     "ESCOLA": "BALAO MAGICO C M E I",
     "ID": 2133728,
